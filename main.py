@@ -67,11 +67,13 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
 
         # LEFT MENUS
-        widgets.btn_home.clicked.connect(self.buttonClick)
-        widgets.btn_widgets.clicked.connect(self.buttonClick)
-        widgets.btn_new.clicked.connect(self.buttonClick)
-        widgets.btn_save.clicked.connect(self.buttonClick)
-
+        widgets.btn_Passive.clicked.connect(self.buttonClick)
+        widgets.btn_Isometric.clicked.connect(self.buttonClick)
+        widgets.btn_Isotonic.clicked.connect(self.buttonClick)
+        widgets.btn_Isokinetic.clicked.connect(self.buttonClick)
+        widgets.btn_Spring.clicked.connect(self.buttonClick)
+        widgets.btn_Water.clicked.connect(self.buttonClick)
+        
         # EXTRA LEFT BOX
         def openCloseLeftBox():
             UIFunctions.toggleLeftBox(self, True)
@@ -102,8 +104,8 @@ class MainWindow(QMainWindow):
 
         # SET HOME PAGE AND SELECT MENU
         # ///////////////////////////////////////////////////////////////
-        widgets.stackedWidget.setCurrentWidget(widgets.home)
-        widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
+        widgets.stackedWidget.setCurrentWidget(widgets.Passive)
+        widgets.btn_Passive.setStyleSheet(UIFunctions.selectMenu(widgets.btn_Passive.styleSheet()))
 
 
     # BUTTONS CLICK
@@ -114,26 +116,50 @@ class MainWindow(QMainWindow):
         btn = self.sender()
         btnName = btn.objectName()
 
-        # SHOW HOME PAGE
-        if btnName == "btn_home":
-            widgets.stackedWidget.setCurrentWidget(widgets.home)
+        # SHOW Passive PAGE
+        if btnName == "btn_Passive":
+            widgets.stackedWidget.setCurrentWidget(widgets.Passive)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        # SHOW WIDGETS PAGE
-        if btnName == "btn_widgets":
-            widgets.stackedWidget.setCurrentWidget(widgets.widgets)
+        # SHOW Isometric PAGE
+        if btnName == "btn_Isometric":
+            widgets.stackedWidget.setCurrentWidget(widgets.Isometric)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            
+        # SHOW Isotonic PAGE
+        if btnName == "btn_Isotonic":
+            widgets.stackedWidget.setCurrentWidget(widgets.Isotonic)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+            
+        # SHOW Isokinetic PAGE
+        if btnName == "btn_Isokinetic":
+            widgets.stackedWidget.setCurrentWidget(widgets.Isokinetic)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+        
+        # SHOW Spring Form PAGE
+        if btnName == "btn_Spring":
+            widgets.stackedWidget.setCurrentWidget(widgets.Spring)
+            UIFunctions.resetStyle(self, btnName)
+            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
+        
+        # SHOW Water Form PAGE
+        if btnName == "btn_Water":
+            widgets.stackedWidget.setCurrentWidget(widgets.Water)
             UIFunctions.resetStyle(self, btnName)
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
 
-        # SHOW NEW PAGE
-        if btnName == "btn_new":
-            widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
-            UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
-            btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
+        # # SHOW NEW PAGE
+        # if btnName == "btn_new":
+        #     widgets.stackedWidget.setCurrentWidget(widgets.new_page) # SET PAGE
+        #     UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
+        #     btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
-        if btnName == "btn_save":
-            print("Save BTN clicked!")
+        # if btnName == "btn_save":
+        #     print("Save BTN clicked!")
 
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')

@@ -23,8 +23,7 @@
   <widget class="QWidget" name="styleSheet">
    <property name="font">
     <font>
-     <family>Segoe UI</family>
-     <pointsize>10</pointsize>
+     <pointsize>12</pointsize>
      <italic>false</italic>
      <bold>false</bold>
     </font>
@@ -39,7 +38,7 @@ DARK THEME - DRACULA COLOR BASED
 
 QWidget{
 	color: rgb(221, 221, 221);
-	font: 10pt &quot;Segoe UI&quot;;
+	font: 12pt &quot;Segoe UI&quot;;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -273,7 +272,7 @@ LineEdit */
 QLineEdit {
 	background-color: rgb(33, 37, 43);
 	border-radius: 5px;
-	border: 2px solid rgb(33, 37, 43);
+	border: 2px solid rgb(20, 20, 20);
 	padding-left: 10px;
 	selection-color: rgb(255, 255, 255);
 	selection-background-color: rgb(255, 121, 198);
@@ -675,7 +674,6 @@ Button */
              </property>
              <property name="font">
               <font>
-               <family>Segoe UI Semibold</family>
                <pointsize>12</pointsize>
                <italic>false</italic>
                <bold>false</bold>
@@ -705,7 +703,6 @@ Button */
              </property>
              <property name="font">
               <font>
-               <family>Segoe UI</family>
                <pointsize>8</pointsize>
                <italic>false</italic>
                <bold>false</bold>
@@ -790,8 +787,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -838,7 +834,7 @@ Button */
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="btn_home">
+                 <widget class="QPushButton" name="btn_Passive">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -853,8 +849,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -869,12 +864,12 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-home.png);</string>
                   </property>
                   <property name="text">
-                   <string>Home</string>
+                   <string>Passive</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_widgets">
+                 <widget class="QPushButton" name="btn_Isometric">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -889,8 +884,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -905,12 +899,12 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-gamepad.png);</string>
                   </property>
                   <property name="text">
-                   <string>Widgets</string>
+                   <string>Isometric</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_new">
+                 <widget class="QPushButton" name="btn_Isotonic">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -925,8 +919,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -941,12 +934,12 @@ Button */
                    <string notr="true">background-image: url(:/icons/images/icons/cil-file.png);</string>
                   </property>
                   <property name="text">
-                   <string>New</string>
+                   <string>Isotonic</string>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_save">
+                 <widget class="QPushButton" name="btn_Isokinetic">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -961,8 +954,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -974,10 +966,60 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-save.png)</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-exit-to-app.png);</string>
                   </property>
                   <property name="text">
-                   <string>Save</string>
+                   <string>Isokinetic</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_Spring">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>45</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-vertical-align-bottom.png);</string>
+                  </property>
+                  <property name="text">
+                   <string>Spring Form</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_Water">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>45</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-chevron-double-up.png);</string>
+                  </property>
+                  <property name="text">
+                   <string>Water Form</string>
                   </property>
                  </widget>
                 </item>
@@ -997,8 +1039,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -1060,8 +1101,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -1314,8 +1354,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -1350,8 +1389,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -1386,8 +1424,7 @@ Button */
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -1439,14 +1476,14 @@ Button */
                    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff79c6;&quot;&gt;PyDracula&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;MIT License&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#bd93f9;&quot;&gt;Created by: Wanderson M. Pimenta&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff79c6;&quot;&gt;Convert UI&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ff79c6;&quot;&gt;PyDracula&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;MIT License&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#bd93f9;&quot;&gt;Created by: Wanderson M. Pimenta&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ff79c6;&quot;&gt;Convert UI&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;pyside6-uic main.ui &amp;gt; ui_main.py&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ff79c6;&quot;&gt;Convert QRC&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#ff79c6;&quot;&gt;Convert QRC&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; color:#ffffff;&quot;&gt;pyside6-rcc resources.qrc -o resources_rc.py&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
@@ -1576,8 +1613,7 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                    </font>
@@ -1709,8 +1745,7 @@ p, li { white-space: pre-wrap; }
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
+                    <pointsize>12</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>
                     <stylestrategy>PreferDefault</stylestrategy>
@@ -1859,14 +1894,1111 @@ p, li { white-space: pre-wrap; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>2</number>
+                      <number>0</number>
                      </property>
-                     <widget class="QWidget" name="home">
+                     <widget class="QWidget" name="Passive">
                       <property name="styleSheet">
-                       <string notr="true">background-image: url(:/images/images/images/PyDracula_vertical.png);
-background-position: center;
-background-repeat: no-repeat;</string>
+                       <string notr="true"/>
                       </property>
+                      <layout class="QGridLayout" name="gridLayout_Passive" rowstretch="1,2,2,2,2" columnstretch="1,3,1,3">
+                       <property name="horizontalSpacing">
+                        <number>10</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_PassiveSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Set:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QLineEdit" name="lineEdit_PassiveRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_PassiveSpeed">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Speed: (deg/s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_PassiveRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Rest Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLineEdit" name="lineEdit_PassiveSpeed">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QLineEdit" name="lineEdit_PassiveMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_PassiveMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Min ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QLineEdit" name="lineEdit_PassiveRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_PassiveMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_PassiveMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Max ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_PassiveSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_PassiveTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_PassiveTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_PassiveRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Repeat:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter">
+                        <widget class="QLabel" name="label_Passive">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>16</pointsize>
+                           <italic>false</italic>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 85, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>Passive</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="Isometric">
+                      <layout class="QGridLayout" name="gridLayout_Isometric" rowstretch="1,2,2,2,2" columnstretch="1,3,1,3">
+                       <property name="horizontalSpacing">
+                        <number>10</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="1" column="2" alignment="Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_IsometricRestTime">
+                         <property name="text">
+                          <string>Rest Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0" alignment="Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_IsometricHoldTime">
+                         <property name="text">
+                          <string>Hold TIme: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1" alignment="Qt::AlignVCenter">
+                        <widget class="QLineEdit" name="lineEdit_IsometricSet"/>
+                       </item>
+                       <item row="1" column="1" alignment="Qt::AlignVCenter">
+                        <widget class="QLineEdit" name="lineEdit_IsometricTime"/>
+                       </item>
+                       <item row="1" column="3" alignment="Qt::AlignVCenter">
+                        <widget class="QLineEdit" name="lineEdit_IsometricRestTime"/>
+                       </item>
+                       <item row="3" column="2" rowspan="2" colspan="2">
+                        <widget class="QGroupBox" name="groupBox_IsometricPos">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="title">
+                          <string>Positions (deg)</string>
+                         </property>
+                         <property name="flat">
+                          <bool>false</bool>
+                         </property>
+                         <property name="checkable">
+                          <bool>false</bool>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_IsometricPos" columnstretch="1,3">
+                          <item row="0" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_IsometricPos1">
+                            <property name="text">
+                             <string>Position 1:</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLineEdit" name="lineEdit_IsometricPos1"/>
+                          </item>
+                          <item row="1" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_IsometricPos2">
+                            <property name="text">
+                             <string>Position 2:</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLineEdit" name="lineEdit_IsometricPos2"/>
+                          </item>
+                          <item row="2" column="1" alignment="Qt::AlignVCenter">
+                           <widget class="QLineEdit" name="lineEdit_IsometricPos3"/>
+                          </item>
+                          <item row="2" column="0" alignment="Qt::AlignVCenter">
+                           <widget class="QLabel" name="label_IsometricPos3">
+                            <property name="text">
+                             <string>Position 3:</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="2" column="2" alignment="Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_IsometricRepeat">
+                         <property name="text">
+                          <string>Repeat:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="3" alignment="Qt::AlignVCenter">
+                        <widget class="QLineEdit" name="lineEdit_IsometricRepeat"/>
+                       </item>
+                       <item row="2" column="0" alignment="Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_IsometricSet">
+                         <property name="text">
+                          <string>Set:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0" alignment="Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_IsometricForce">
+                         <property name="text">
+                          <string>Force: (N)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1" alignment="Qt::AlignVCenter">
+                        <widget class="QLineEdit" name="lineEdit_IsometricHoldTime"/>
+                       </item>
+                       <item row="1" column="0" alignment="Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_IsometricTime">
+                         <property name="text">
+                          <string>Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1" alignment="Qt::AlignVCenter">
+                        <widget class="QLineEdit" name="lineEdit_IsometricForce"/>
+                       </item>
+                       <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                        <widget class="QLabel" name="label_Isometric">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 85, 255)</string>
+                         </property>
+                         <property name="text">
+                          <string>Isometric</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="Isotonic">
+                      <layout class="QGridLayout" name="gridLayout_Isotonic" rowstretch="1,2,2,2,2" columnstretch="1,3,1,3">
+                       <property name="horizontalSpacing">
+                        <number>10</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicExtensionForce">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="label_IsotonicFlexionForce">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Flexion Force: (N)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicFlexionForce">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_IsotonicRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Rest Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_IsotonicRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Repeat:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_IsotonicExtensionForce">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Extension Force: (N)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_IsotonicMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Min ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsotonicRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_IsotonicSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Set:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_IsotonicTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_IsotonicMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Max ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter">
+                        <widget class="QLabel" name="label_Isotonic">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 85, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>Isotonic</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="Isokinetic">
+                      <layout class="QGridLayout" name="gridLayout_Isokinetic" columnstretch="1,3,1,3">
+                       <property name="horizontalSpacing">
+                        <number>10</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="4" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticFlexionForce"/>
+                       </item>
+                       <item row="6" column="2" colspan="2">
+                        <widget class="QComboBox" name="comboBox_IsokineticEccCon">
+                         <item>
+                          <property name="text">
+                           <string>ECC/CON</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>ECC/ECC</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>CON/CON</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>CON/ECC</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_IsokineticSet">
+                         <property name="text">
+                          <string>Set:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticRestTime"/>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticMinROM"/>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_IsokineticMaxROM">
+                         <property name="text">
+                          <string>Max ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="2">
+                        <widget class="QLabel" name="label_IsokineticFlexionSpeed">
+                         <property name="text">
+                          <string>Flexion Speed: (deg/s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_IsokineticTime">
+                         <property name="text">
+                          <string>Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticExtensionForce"/>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_IsokineticRestTime">
+                         <property name="text">
+                          <string>Rest Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_IsokineticExtensionForce">
+                         <property name="text">
+                          <string>Extension Force: (N)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="label_IsokineticFlexionForce">
+                         <property name="text">
+                          <string>Flexion Force: (N)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticTime"/>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticRepeat"/>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_IsokineticRepeat">
+                         <property name="text">
+                          <string>Repeat:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticMaxROM"/>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_IsokineticMinROM">
+                         <property name="text">
+                          <string>Min ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="0">
+                        <widget class="QLabel" name="label_IsokineticExtensionSpeed">
+                         <property name="text">
+                          <string>Extension Speed: (deg/s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticSet"/>
+                       </item>
+                       <item row="5" column="1">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticExtensionSpeed"/>
+                       </item>
+                       <item row="5" column="3">
+                        <widget class="QLineEdit" name="lineEdit_IsokineticFlexionSpeed"/>
+                       </item>
+                       <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter">
+                        <widget class="QLabel" name="label_Isokinetic">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 85, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>Isokinetic</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="Spring">
+                      <layout class="QGridLayout" name="gridLayout_Spring" columnstretch="1,3,1,3">
+                       <property name="horizontalSpacing">
+                        <number>10</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter">
+                        <widget class="QLabel" name="label_Spring">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 85, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>Spring Form</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_SpringTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_SpringTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_SpringRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Rest Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QLineEdit" name="lineEdit_SpringRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_SpringSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Set:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_SpringSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_SpringRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Repeat:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QLineEdit" name="lineEdit_SpringRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_SpringMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Min ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_SpringMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_SpringMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Max ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QLineEdit" name="lineEdit_SpringMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_SpringInitialPos">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Initial Position: (deg)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLineEdit" name="lineEdit_SpringInitialPos">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="label_SpringStiffness">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Stiffness:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="3">
+                        <widget class="QLineEdit" name="lineEdit_SpringStiffness">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="Water">
+                      <layout class="QGridLayout" name="gridLayout_Water" columnstretch="1,3,1,3">
+                       <property name="horizontalSpacing">
+                        <number>10</number>
+                       </property>
+                       <property name="verticalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_WaterTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLineEdit" name="lineEdit_WaterTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_WaterRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Rest Time: (s)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QLineEdit" name="lineEdit_WaterRestTime">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_WaterSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Set:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLineEdit" name="lineEdit_WaterSet">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_WaterRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Repeat:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QLineEdit" name="lineEdit_WaterRepeat">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_WaterMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Min ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLineEdit" name="lineEdit_WaterMinROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_WaterMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Max ROM:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QLineEdit" name="lineEdit_WaterMaxROM">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_WaterDensity">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="text">
+                          <string>Density:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLineEdit" name="lineEdit_WaterDensity">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter">
+                        <widget class="QLabel" name="label_Water">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <pointsize>16</pointsize>
+                           <italic>false</italic>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 85, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>Water Form</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </widget>
                      <widget class="QWidget" name="widgets">
                       <property name="styleSheet">
@@ -1967,8 +3099,7 @@ background-repeat: no-repeat;</string>
                                  <widget class="QLabel" name="labelBoxBlenderInstalation">
                                   <property name="font">
                                    <font>
-                                    <family>Segoe UI</family>
-                                    <pointsize>10</pointsize>
+                                    <pointsize>12</pointsize>
                                     <italic>false</italic>
                                     <bold>false</bold>
                                    </font>
@@ -2027,8 +3158,7 @@ background-repeat: no-repeat;</string>
                                     </property>
                                     <property name="font">
                                      <font>
-                                      <family>Segoe UI</family>
-                                      <pointsize>10</pointsize>
+                                      <pointsize>12</pointsize>
                                       <italic>false</italic>
                                       <bold>false</bold>
                                      </font>
@@ -2163,7 +3293,7 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>218</width>
+                                 <width>274</width>
                                  <height>218</height>
                                 </rect>
                                </property>
@@ -2198,8 +3328,7 @@ background-repeat: no-repeat;</string>
                              <widget class="QComboBox" name="comboBox">
                               <property name="font">
                                <font>
-                                <family>Segoe UI</family>
-                                <pointsize>10</pointsize>
+                                <pointsize>12</pointsize>
                                 <italic>false</italic>
                                 <bold>false</bold>
                                </font>
@@ -2581,9 +3710,7 @@ background-repeat: no-repeat;</string>
                               <string>New Row</string>
                              </property>
                              <property name="font">
-                              <font>
-                               <family>Segoe UI</family>
-                              </font>
+                              <font/>
                              </property>
                             </row>
                             <row>
@@ -2704,20 +3831,6 @@ background-repeat: no-repeat;</string>
                            </widget>
                           </item>
                          </layout>
-                        </widget>
-                       </item>
-                      </layout>
-                     </widget>
-                     <widget class="QWidget" name="new_page">
-                      <layout class="QVBoxLayout" name="verticalLayout_20">
-                       <item>
-                        <widget class="QLabel" name="label">
-                         <property name="text">
-                          <string>NEW PAGE TEST</string>
-                         </property>
-                         <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                         </property>
                         </widget>
                        </item>
                       </layout>
@@ -2843,8 +3956,7 @@ background-repeat: no-repeat;</string>
                            </property>
                            <property name="font">
                             <font>
-                             <family>Segoe UI</family>
-                             <pointsize>10</pointsize>
+                             <pointsize>12</pointsize>
                              <italic>false</italic>
                              <bold>false</bold>
                             </font>
@@ -2879,8 +3991,7 @@ background-repeat: no-repeat;</string>
                            </property>
                            <property name="font">
                             <font>
-                             <family>Segoe UI</family>
-                             <pointsize>10</pointsize>
+                             <pointsize>12</pointsize>
                              <italic>false</italic>
                              <bold>false</bold>
                             </font>
@@ -2915,8 +4026,7 @@ background-repeat: no-repeat;</string>
                            </property>
                            <property name="font">
                             <font>
-                             <family>Segoe UI</family>
-                             <pointsize>10</pointsize>
+                             <pointsize>12</pointsize>
                              <italic>false</italic>
                              <bold>false</bold>
                             </font>
@@ -2993,7 +4103,6 @@ background-repeat: no-repeat;</string>
                   </property>
                   <property name="font">
                    <font>
-                    <family>Segoe UI</family>
                     <pointsize>-1</pointsize>
                     <italic>false</italic>
                     <bold>false</bold>

@@ -45,15 +45,15 @@ class MainWindow(QMainWindow):
 
         # APP NAME
         # ///////////////////////////////////////////////////////////////
-        title = "PyDracula - Modern GUI"
-        description = "PyDracula APP - Theme with colors based on Dracula for Python."
+        title = "FUM - Physio"
+        description = "FUM - Physio"
         # APPLY TEXTS
         self.setWindowTitle(title)
         widgets.titleRightInfo.setText(description)
 
         # TOGGLE MENU
         # ///////////////////////////////////////////////////////////////
-        widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True))
+        # widgets.toggleButton.clicked.connect(lambda: UIFunctions.toggleMenu(self, True))
 
         # SET UI DEFINITIONS
         # ///////////////////////////////////////////////////////////////
@@ -63,6 +63,12 @@ class MainWindow(QMainWindow):
         # ///////////////////////////////////////////////////////////////
         widgets.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
 
+        # Make lineEdits accept only numbers
+        # ///////////////////////////////////////////////////////////////
+        lineEdits = widgets.stackedWidget.findChildren(QLineEdit)
+        for l in lineEdits:
+            l.setValidator(QRegularExpressionValidator(QRegularExpression('[0-9]+')))
+        
         # BUTTONS CLICK
         # ///////////////////////////////////////////////////////////////
 
@@ -75,10 +81,10 @@ class MainWindow(QMainWindow):
         widgets.btn_Water.clicked.connect(self.buttonClick)
         
         # EXTRA LEFT BOX
-        def openCloseLeftBox():
-            UIFunctions.toggleLeftBox(self, True)
-        widgets.toggleLeftBox.clicked.connect(openCloseLeftBox)
-        widgets.extraCloseColumnBtn.clicked.connect(openCloseLeftBox)
+        # def openCloseLeftBox():
+        #     UIFunctions.toggleLeftBox(self, True)
+        # widgets.toggleLeftBox.clicked.connect(openCloseLeftBox)
+        # widgets.extraCloseColumnBtn.clicked.connect(openCloseLeftBox)
 
         # EXTRA RIGHT BOX
         def openCloseRightBox():
@@ -158,11 +164,8 @@ class MainWindow(QMainWindow):
         #     UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
         #     btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
-        # if btnName == "btn_save":
-        #     print("Save BTN clicked!")
-
-        # PRINT BTN NAME
-        print(f'Button "{btnName}" pressed!')
+        # # PRINT BTN NAME
+        # print(f'Button "{btnName}" pressed!')
 
 
     # RESIZE EVENTS
@@ -185,6 +188,5 @@ class MainWindow(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon("icon.ico"))
     window = MainWindow()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

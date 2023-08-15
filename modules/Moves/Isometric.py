@@ -2,19 +2,12 @@
 import time
 import traceback
 from PyQt5.QtCore import QObject, QThread, pyqtSignal
-import Adafruit_ADS1x15
 
 class Isometric(QObject):
     finished = pyqtSignal()
-    adc = Adafruit_ADS1x15.ADS1115(address=0x48, busnum=5)
     M_i, Timer_i, F_i, Count_i, Set_i, Timer2, Run_Time_old = [0, 0, 0, 0, 0, 100, 0]
-
-    def Force_Loadcell(self):
-        GAIN = 1
-        time.sleep(0.001)
-        ADC_Value = (self.adc.read_adc(0, gain=GAIN, data_rate=860) - 19944)/6.232
-        return ADC_Value
-
+    # Loadcell = loadcell()
+    
     def Refrence_Generator(self, Force_Ref, Time_h, Theta1, Theta2, Theta3, Theta, Force):
         
         Velocity = 0
@@ -123,7 +116,7 @@ class Isometric(QObject):
         while True:
             try:
                 Theta = node.tpdo[1]['Position actual value'].raw *(360 / (1280000 * 25))
-                Force = self.Force_Loadcell()
+                Force = self.Loadcell.Force_Loadcell()
                 Velocity = self.Refrence_Generator(Force_Ref, Hold_Time, Theta1, Theta2, Theta3, Theta, Force)
                 Velocity = self.Set_Rep(Rest_Time, Theta, Theta2, Theta1, Velocity, Repeats_Desired, Sets_Desired)
                 # print('Vel = ', Velocity)

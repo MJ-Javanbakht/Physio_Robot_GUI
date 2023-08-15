@@ -31,8 +31,10 @@ from . ui_functions import *
 from . app_functions import *
 
 # Moves
-from modules.Moves.loadcell import loadcell
-from modules.Moves.passive import *
+# from modules.Moves.loadcell import loadcell
+# from . Moves import config, ADS1263
+# from modules.Moves.loadcell import loadcell
+from modules.Moves.passive import Passive
 from modules.Moves.Isometric import Isometric
 from modules.Moves.Isotonic import *
 # from Moves import *

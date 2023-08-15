@@ -18,7 +18,7 @@ class Game():
   bird_list_index = 0
   pipe_list = []
   game_status = True
-  game_font = pygame.font.Font('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/font/Flappy.TTF', 40)
+  game_font = pygame.font.Font('modules/games/assets/font/Flappy.TTF', 40)
   score = 0
   high_score = 0
   active_score = True
@@ -30,23 +30,23 @@ class Game():
   isotonic_pipe = 0   ####
 
   #--------# 
-  win_sound = pygame.mixer.Sound('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/sound/smb_stomp.wav')
-  game_over_sound = pygame.mixer.Sound('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/sound/smb_mariodie.wav')
+  win_sound = pygame.mixer.Sound('modules/games/assets/sound/smb_stomp.wav')
+  game_over_sound = pygame.mixer.Sound('modules/games/assets/sound/smb_mariodie.wav')
   #-------#
-  background_image = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/bg2.png'),0 ,1.3)
-  floor_image = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/floor.png'), 0, 1.2)
+  background_image = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/bg2.png'),0 ,1.3)
+  floor_image = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/floor.png'), 0, 1.2)
 
-  bird_image_mid = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/red_bird_mid_flap.png'), 0, 1.4)
-  bird_image_up = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/red_bird_up_flap.png'), 0, 1.4)
-  bird_image_down = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/red_bird_down_flap.png'), 0, 1.4)
+  bird_image_mid = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/red_bird_mid_flap.png'), 0, 1.4)
+  bird_image_up = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/red_bird_up_flap.png'), 0, 1.4)
+  bird_image_down = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/red_bird_down_flap.png'), 0, 1.4)
 
   bird_list = [bird_image_mid, bird_image_up, bird_image_down]
 
   bird_image = bird_list[bird_list_index]
 
-  pipe_image = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/pipe_green.png'), 0, 1.2)
+  pipe_image = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/pipe_green.png'), 0, 1.2)
 
-  game_over_image = pygame.transform.rotozoom(pygame.image.load('/home/physio/codes/Physio Robot/Physio_Robot_GUI/modules/games/assets/img/message.png'), 0, 1.2)
+  game_over_image = pygame.transform.rotozoom(pygame.image.load('modules/games/assets/img/message.png'), 0, 1.2)
   game_over_image_rect = game_over_image.get_rect(center=(187,350))
 
   # RECTANGEL ARROUND

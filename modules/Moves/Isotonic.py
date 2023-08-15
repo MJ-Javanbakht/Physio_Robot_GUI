@@ -1,12 +1,7 @@
-from tokenize import PseudoExtras
 import canopen
 import csv
 import time
 import math
-import RPi.GPIO as GPIO
-import keyboard  # using module keyboard
-from pynput.keyboard import Listener
-import Adafruit_ADS1x15
 
 f_i, set_i, stopTime_i, count_d_i, count_u_i, runTime_old, state_i = 7*[0]
 global theta
@@ -163,7 +158,7 @@ def forceCompensator(theta, velocity):
 # end def
 # =================================================================
 
-def  weightCompensator(theta):
+def weightCompensator(theta):
     output = m*g*math.sin(deg2rad*theta)
     return output    
 # end def
@@ -201,7 +196,6 @@ def init_drive(node):
 # =================================================================
 
 def run(node, restTime, setsDesired, repeatsDesired, extentionForce, flexionForce, minROM, maxROM):
-    init_drive(node)
     init_drive(node)
     ROM = maxROM - minROM
     try:

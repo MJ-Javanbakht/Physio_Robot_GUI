@@ -43,8 +43,8 @@ class MainWindow(QMainWindow):
         widgets = self.ui
         self.driveStarted = False
         # node = check_node() 
-        self.network, self.drive = connect_node(1)
-        init_drive(self.drive, 0.005)
+        # self.network, self.drive = connect_node(1)
+        # init_drive(self.drive, 0.005)
 
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
@@ -162,8 +162,9 @@ class MainWindow(QMainWindow):
             minROM = widgets.lineEdit_PassiveMinROM.text()
             maxROM = widgets.lineEdit_PassiveMaxROM.text()
             speed = widgets.lineEdit_PassiveSpeed.text()
-            p = Passive(time,restTime,sets,repeats,minROM,maxROM,speed)
-            p.print()
+            passive = Passive()
+            passive.run(self.node,time,restTime,sets,repeats,minROM,maxROM,speed)
+            passive.print()
         
         # SHOW Isometric PAGE
         if btnName == "btn_Isometric":

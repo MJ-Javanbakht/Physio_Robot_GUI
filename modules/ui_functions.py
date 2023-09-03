@@ -30,7 +30,7 @@ class UIFunctions(MainWindow):
         global GLOBAL_STATE
         status = GLOBAL_STATE
         if status == False:
-            self.showMaximized()
+            self.showMaximized(),
             GLOBAL_STATE = True
             self.ui.appMargins.setContentsMargins(0, 0, 0, 0)
             self.ui.maximizeRestoreAppBtn.setToolTip("Restore")
@@ -84,7 +84,7 @@ class UIFunctions(MainWindow):
             self.animation.setDuration(Settings.TIME_ANIMATION)
             self.animation.setStartValue(width)
             self.animation.setEndValue(widthExtended)
-            self.animation.setEasingCurve(QEasingCurve.InOutQuart)
+            self.animation.setEasingCurve(QEasingCurve.Type.InOutQuart)
             self.animation.start()
 
     # TOGGLE LEFT BOX
@@ -92,7 +92,7 @@ class UIFunctions(MainWindow):
     def toggleLeftBox(self, enable):
         if enable:
             # GET WIDTH
-            width = self.ui.extraLeftBox.width()
+            width = self.ui.extraRightBox.width()
             widthRightBox = self.ui.extraRightBox.width()
             maxExtend = Settings.LEFT_BOX_WIDTH
             color = Settings.BTN_LEFT_BOX_COLOR
@@ -122,7 +122,7 @@ class UIFunctions(MainWindow):
         if enable:
             # GET WIDTH
             width = self.ui.extraRightBox.width()
-            widthLeftBox = self.ui.extraLeftBox.width()
+            widthLeftBox = self.ui.extraRightBox.width()
             maxExtend = Settings.RIGHT_BOX_WIDTH
             color = Settings.BTN_RIGHT_BOX_COLOR
             standard = 0
@@ -161,18 +161,18 @@ class UIFunctions(MainWindow):
             right_width = 0       
 
         # ANIMATION LEFT BOX        
-        self.left_box = QPropertyAnimation(self.ui.extraLeftBox, b"minimumWidth")
+        self.left_box = QPropertyAnimation(self.ui.extraRightBox, b"minimumWidth")
         self.left_box.setDuration(Settings.TIME_ANIMATION)
         self.left_box.setStartValue(left_box_width)
         self.left_box.setEndValue(left_width)
-        self.left_box.setEasingCurve(QEasingCurve.InOutQuart)
+        self.left_box.setEasingCurve(QEasingCurve.Type.InOutQuart)
 
         # ANIMATION RIGHT BOX        
         self.right_box = QPropertyAnimation(self.ui.extraRightBox, b"minimumWidth")
         self.right_box.setDuration(Settings.TIME_ANIMATION)
         self.right_box.setStartValue(right_box_width)
         self.right_box.setEndValue(right_width)
-        self.right_box.setEasingCurve(QEasingCurve.InOutQuart)
+        self.right_box.setEasingCurve(QEasingCurve.Type.InOutQuart)
 
         # GROUP ANIMATION
         self.group = QParallelAnimationGroup()
@@ -222,8 +222,8 @@ class UIFunctions(MainWindow):
 
         if Settings.ENABLE_CUSTOM_TITLE_BAR:
             #STANDARD TITLE BAR
-            self.setWindowFlags(Qt.FramelessWindowHint)
-            self.setAttribute(Qt.WA_TranslucentBackground)
+            self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
+            self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
 
             # MOVE WINDOW / MAXIMIZE / RESTORE
             def moveWindow(event):
@@ -231,17 +231,22 @@ class UIFunctions(MainWindow):
                 if UIFunctions.returStatus(self):
                     UIFunctions.maximize_restore(self)
                 # MOVE WINDOW
-                if event.buttons() == Qt.LeftButton:
-                    self.move(self.pos() + event.globalPos() - self.dragPos)
-                    self.dragPos = event.globalPos()
-                    event.accept()
+                if event.buttons() == Qt.MouseButton.LeftButton:
+                    new_position = event.globalPos()
+                    movement = new_position - self.current_position
+                    self.setGeometry(int(self.mapToGlobal(movement).x()), int(self.mapToGlobal(movement).y()),
+                                                self.width(), self.height())
+                    self.current_position = new_position
+                    # self.mapToGlobal(event.globalPos() - self.dragPos)
+                    # self.dragPos = event.globalPos()
+                    # event.accept()
             self.ui.titleRightInfo.mouseMoveEvent = moveWindow
 
             # CUSTOM GRIPS
-            self.left_grip = CustomGrip(self, Qt.LeftEdge, True)
-            self.right_grip = CustomGrip(self, Qt.RightEdge, True)
-            self.top_grip = CustomGrip(self, Qt.TopEdge, True)
-            self.bottom_grip = CustomGrip(self, Qt.BottomEdge, True)
+            self.left_grip = CustomGrip(self, Qt.Edge.LeftEdge, True)
+            self.right_grip = CustomGrip(self, Qt.Edge.RightEdge, True)
+            self.top_grip = CustomGrip(self, Qt.Edge.TopEdge, True)
+            self.bottom_grip = CustomGrip(self, Qt.Edge.BottomEdge, True)
 
         else:
             self.ui.appMargins.setContentsMargins(0, 0, 0, 0)

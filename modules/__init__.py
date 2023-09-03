@@ -13,12 +13,14 @@
 # https://doc.qt.io/qtforpython/licenses.html
 #
 # ///////////////////////////////////////////////////////////////
-from PySide6.QtCore import *
-from PySide6.QtGui import *
-from PySide6.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
 
 # GUI FILE
 from . ui_main import Ui_MainWindow
+from . test import Ui_MainWindow1
+from . uimain2 import Ui_MainWindow2
 
 # APP SETTINGS
 from . app_settings import Settings
@@ -28,3 +30,20 @@ from . ui_functions import *
 
 # APP FUNCTIONS
 from . app_functions import *
+
+# Moves
+from modules.Moves.loadcell import loadcell
+from modules.Moves.Passive import *
+from modules.Moves.Isometric import Isometric
+# from Moves import *
+
+# CanOpen
+from modules.canOpen.check_node import *
+from modules.canOpen.config import *
+from modules.canOpen.Homing import *
+from modules.canOpen.Position import *
+from modules.canOpen.Tourqe import *
+from modules.canOpen.Velocity import *
+
+# Game
+# from modules.games.Flappy_game import Game

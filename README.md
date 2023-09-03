@@ -1,4 +1,4 @@
-# PyDracula - Modern GUI PySide6 / PyQt6
+# PyDracula - Modern GUI PySide6 / PyQt5
 # 
 
 > ## :gift: **//// DONATE ////**

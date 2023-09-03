@@ -8,9 +8,9 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import *  # type: ignore
-from PySide6.QtGui import *  # type: ignore
-from PySide6.QtWidgets import *  # type: ignore
+from PyQt5.QtCore import *  # type: ignore
+from PyQt5.QtGui import *  # type: ignore
+from PyQt5.QtWidgets import *  # type: ignore
 
 from . resources_rc import *
 
@@ -554,8 +554,8 @@ class Ui_MainWindow(object):
         self.bgApp = QFrame(self.styleSheet)
         self.bgApp.setObjectName(u"bgApp")
         self.bgApp.setStyleSheet(u"")
-        self.bgApp.setFrameShape(QFrame.NoFrame)
-        self.bgApp.setFrameShadow(QFrame.Raised)
+        self.bgApp.setFrameShape(QFrame.Shape.NoFrame)
+        self.bgApp.setFrameShadow(QFrame.Shadow.Raised)
         self.appLayout = QHBoxLayout(self.bgApp)
         self.appLayout.setSpacing(0)
         self.appLayout.setObjectName(u"appLayout")
@@ -564,8 +564,8 @@ class Ui_MainWindow(object):
         self.leftMenuBg.setObjectName(u"leftMenuBg")
         self.leftMenuBg.setMinimumSize(QSize(220, 0))
         self.leftMenuBg.setMaximumSize(QSize(220, 16777215))
-        self.leftMenuBg.setFrameShape(QFrame.NoFrame)
-        self.leftMenuBg.setFrameShadow(QFrame.Raised)
+        self.leftMenuBg.setFrameShape(QFrame.Shape.NoFrame)
+        self.leftMenuBg.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.leftMenuBg)
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
@@ -574,45 +574,45 @@ class Ui_MainWindow(object):
         self.topLogoInfo.setObjectName(u"topLogoInfo")
         self.topLogoInfo.setMinimumSize(QSize(0, 60))
         self.topLogoInfo.setMaximumSize(QSize(16777215, 60))
-        self.topLogoInfo.setFrameShape(QFrame.NoFrame)
-        self.topLogoInfo.setFrameShadow(QFrame.Raised)
+        self.topLogoInfo.setFrameShape(QFrame.Shape.NoFrame)
+        self.topLogoInfo.setFrameShadow(QFrame.Shadow.Raised)
         self.topLogo = QFrame(self.topLogoInfo)
         self.topLogo.setObjectName(u"topLogo")
         self.topLogo.setGeometry(QRect(10, 5, 210, 60))
         self.topLogo.setMinimumSize(QSize(210, 60))
         self.topLogo.setMaximumSize(QSize(210, 60))
-        self.topLogo.setFrameShape(QFrame.NoFrame)
-        self.topLogo.setFrameShadow(QFrame.Raised)
+        self.topLogo.setFrameShape(QFrame.Shape.NoFrame)
+        self.topLogo.setFrameShadow(QFrame.Shadow.Raised)
 
         self.verticalLayout_3.addWidget(self.topLogoInfo)
 
         self.leftMenuFrame = QFrame(self.leftMenuBg)
         self.leftMenuFrame.setObjectName(u"leftMenuFrame")
-        self.leftMenuFrame.setFrameShape(QFrame.NoFrame)
-        self.leftMenuFrame.setFrameShadow(QFrame.Raised)
+        self.leftMenuFrame.setFrameShape(QFrame.Shape.NoFrame)
+        self.leftMenuFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalMenuLayout = QVBoxLayout(self.leftMenuFrame)
         self.verticalMenuLayout.setSpacing(0)
         self.verticalMenuLayout.setObjectName(u"verticalMenuLayout")
         self.verticalMenuLayout.setContentsMargins(0, 0, 0, 0)
         self.topMenu = QFrame(self.leftMenuFrame)
         self.topMenu.setObjectName(u"topMenu")
-        self.topMenu.setFrameShape(QFrame.NoFrame)
-        self.topMenu.setFrameShadow(QFrame.Raised)
+        self.topMenu.setFrameShape(QFrame.Shape.NoFrame)
+        self.topMenu.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_8 = QVBoxLayout(self.topMenu)
         self.verticalLayout_8.setSpacing(0)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
         self.btn_Passive = QPushButton(self.topMenu)
         self.btn_Passive.setObjectName(u"btn_Passive")
-        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.btn_Passive.sizePolicy().hasHeightForWidth())
         self.btn_Passive.setSizePolicy(sizePolicy)
         self.btn_Passive.setMinimumSize(QSize(0, 45))
         self.btn_Passive.setFont(font)
-        self.btn_Passive.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_Passive.setLayoutDirection(Qt.LeftToRight)
+        self.btn_Passive.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_Passive.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_Passive.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-home.png);*/\n"
 "border-bottom: 1px solid rgb(40, 44, 52);")
 
@@ -624,8 +624,8 @@ class Ui_MainWindow(object):
         self.btn_Isometric.setSizePolicy(sizePolicy)
         self.btn_Isometric.setMinimumSize(QSize(0, 45))
         self.btn_Isometric.setFont(font)
-        self.btn_Isometric.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_Isometric.setLayoutDirection(Qt.LeftToRight)
+        self.btn_Isometric.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_Isometric.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_Isometric.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-gamepad.png);*/\n"
 "border-bottom: 1px solid rgb(40, 44, 52);")
 
@@ -637,8 +637,8 @@ class Ui_MainWindow(object):
         self.btn_Isotonic.setSizePolicy(sizePolicy)
         self.btn_Isotonic.setMinimumSize(QSize(0, 45))
         self.btn_Isotonic.setFont(font)
-        self.btn_Isotonic.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_Isotonic.setLayoutDirection(Qt.LeftToRight)
+        self.btn_Isotonic.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_Isotonic.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_Isotonic.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-file.png);*/\n"
 "border-bottom: 1px solid rgb(40, 44, 52);")
 
@@ -650,8 +650,8 @@ class Ui_MainWindow(object):
         self.btn_Isokinetic.setSizePolicy(sizePolicy)
         self.btn_Isokinetic.setMinimumSize(QSize(0, 45))
         self.btn_Isokinetic.setFont(font)
-        self.btn_Isokinetic.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_Isokinetic.setLayoutDirection(Qt.LeftToRight)
+        self.btn_Isokinetic.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_Isokinetic.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_Isokinetic.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-exit-to-app.png);*/\n"
 "border-bottom: 1px solid rgb(40, 44, 52);")
 
@@ -662,7 +662,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.btn_Spring.sizePolicy().hasHeightForWidth())
         self.btn_Spring.setSizePolicy(sizePolicy)
         self.btn_Spring.setMinimumSize(QSize(0, 45))
-        self.btn_Spring.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_Spring.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.btn_Spring.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-vertical-align-bottom.png);*/\n"
 "border-bottom: 1px solid rgb(40, 44, 52);")
 
@@ -673,7 +673,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.btn_Water.sizePolicy().hasHeightForWidth())
         self.btn_Water.setSizePolicy(sizePolicy)
         self.btn_Water.setMinimumSize(QSize(0, 45))
-        self.btn_Water.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_Water.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.btn_Water.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-chevron-double-up.png);*/\n"
 "border-bottom: 1px solid rgb(40, 44, 52);")
 
@@ -685,14 +685,14 @@ class Ui_MainWindow(object):
         self.btn_exit.setSizePolicy(sizePolicy)
         self.btn_exit.setMinimumSize(QSize(0, 45))
         self.btn_exit.setFont(font)
-        self.btn_exit.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_exit.setLayoutDirection(Qt.LeftToRight)
+        self.btn_exit.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_exit.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_exit.setStyleSheet(u"/*background-image: url(:/icons/images/icons/cil-x.png);")
 
         self.verticalLayout_8.addWidget(self.btn_exit)
 
 
-        self.verticalMenuLayout.addWidget(self.topMenu, 0, Qt.AlignTop)
+        self.verticalMenuLayout.addWidget(self.topMenu, 0, Qt.AlignmentFlag.AlignTop)
 
 
         self.verticalLayout_3.addWidget(self.leftMenuFrame)
@@ -702,8 +702,8 @@ class Ui_MainWindow(object):
 
         self.contentBox = QFrame(self.bgApp)
         self.contentBox.setObjectName(u"contentBox")
-        self.contentBox.setFrameShape(QFrame.NoFrame)
-        self.contentBox.setFrameShadow(QFrame.Raised)
+        self.contentBox.setFrameShape(QFrame.Shape.NoFrame)
+        self.contentBox.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.contentBox)
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -712,28 +712,28 @@ class Ui_MainWindow(object):
         self.contentTopBg.setObjectName(u"contentTopBg")
         self.contentTopBg.setMinimumSize(QSize(0, 60))
         self.contentTopBg.setMaximumSize(QSize(16777215, 60))
-        self.contentTopBg.setFrameShape(QFrame.NoFrame)
-        self.contentTopBg.setFrameShadow(QFrame.Raised)
+        self.contentTopBg.setFrameShape(QFrame.Shape.NoFrame)
+        self.contentTopBg.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout = QHBoxLayout(self.contentTopBg)
         self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 10, 0)
         self.leftBox = QFrame(self.contentTopBg)
         self.leftBox.setObjectName(u"leftBox")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
         sizePolicy1.setHorizontalStretch(0)
         sizePolicy1.setVerticalStretch(0)
         sizePolicy1.setHeightForWidth(self.leftBox.sizePolicy().hasHeightForWidth())
         self.leftBox.setSizePolicy(sizePolicy1)
-        self.leftBox.setFrameShape(QFrame.NoFrame)
-        self.leftBox.setFrameShadow(QFrame.Raised)
+        self.leftBox.setFrameShape(QFrame.Shape.NoFrame)
+        self.leftBox.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.leftBox)
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.titleRightInfo = QLabel(self.leftBox)
         self.titleRightInfo.setObjectName(u"titleRightInfo")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Expanding)
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Expanding)
         sizePolicy2.setHorizontalStretch(0)
         sizePolicy2.setVerticalStretch(0)
         sizePolicy2.setHeightForWidth(self.titleRightInfo.sizePolicy().hasHeightForWidth())
@@ -745,7 +745,7 @@ class Ui_MainWindow(object):
         font1.setItalic(False)
         self.titleRightInfo.setFont(font1)
         self.titleRightInfo.setStyleSheet(u"font: 18pt \"Segoe UI\";")
-        self.titleRightInfo.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.titleRightInfo.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
         self.horizontalLayout_3.addWidget(self.titleRightInfo)
 
@@ -755,8 +755,8 @@ class Ui_MainWindow(object):
         self.rightButtons = QFrame(self.contentTopBg)
         self.rightButtons.setObjectName(u"rightButtons")
         self.rightButtons.setMinimumSize(QSize(0, 28))
-        self.rightButtons.setFrameShape(QFrame.NoFrame)
-        self.rightButtons.setFrameShadow(QFrame.Raised)
+        self.rightButtons.setFrameShape(QFrame.Shape.NoFrame)
+        self.rightButtons.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.rightButtons)
         self.horizontalLayout_2.setSpacing(5)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
@@ -765,9 +765,9 @@ class Ui_MainWindow(object):
         self.settingsTopBtn.setObjectName(u"settingsTopBtn")
         self.settingsTopBtn.setMinimumSize(QSize(28, 28))
         self.settingsTopBtn.setMaximumSize(QSize(28, 28))
-        self.settingsTopBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.settingsTopBtn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon = QIcon()
-        icon.addFile(u":/icons/images/icons/icon_settings.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/images/icons/icon_settings.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.settingsTopBtn.setIcon(icon)
         self.settingsTopBtn.setIconSize(QSize(20, 20))
 
@@ -777,9 +777,9 @@ class Ui_MainWindow(object):
         self.minimizeAppBtn.setObjectName(u"minimizeAppBtn")
         self.minimizeAppBtn.setMinimumSize(QSize(28, 28))
         self.minimizeAppBtn.setMaximumSize(QSize(28, 28))
-        self.minimizeAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.minimizeAppBtn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon1 = QIcon()
-        icon1.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/icons/images/icons/icon_minimize.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.minimizeAppBtn.setIcon(icon1)
         self.minimizeAppBtn.setIconSize(QSize(20, 20))
 
@@ -793,11 +793,11 @@ class Ui_MainWindow(object):
         font2.setPointSize(16)
         font2.setBold(False)
         font2.setItalic(False)
-        font2.setStyleStrategy(QFont.PreferDefault)
+        font2.setStyleStrategy(QFont.StyleStrategy.PreferDefault)
         self.maximizeRestoreAppBtn.setFont(font2)
-        self.maximizeRestoreAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.maximizeRestoreAppBtn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon2 = QIcon()
-        icon2.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/icons/images/icons/icon_maximize.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.maximizeRestoreAppBtn.setIcon(icon2)
         self.maximizeRestoreAppBtn.setIconSize(QSize(20, 20))
 
@@ -807,32 +807,32 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setObjectName(u"closeAppBtn")
         self.closeAppBtn.setMinimumSize(QSize(28, 28))
         self.closeAppBtn.setMaximumSize(QSize(28, 28))
-        self.closeAppBtn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.closeAppBtn.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         icon3 = QIcon()
-        icon3.addFile(u":/icons/images/icons/icon_close.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/icons/images/icons/icon_close.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.closeAppBtn.setIcon(icon3)
         self.closeAppBtn.setIconSize(QSize(20, 20))
 
         self.horizontalLayout_2.addWidget(self.closeAppBtn)
 
 
-        self.horizontalLayout.addWidget(self.rightButtons, 0, Qt.AlignRight)
+        self.horizontalLayout.addWidget(self.rightButtons, 0, Qt.AlignmentFlag.AlignRight)
 
 
         self.verticalLayout_2.addWidget(self.contentTopBg)
 
         self.contentBottom = QFrame(self.contentBox)
         self.contentBottom.setObjectName(u"contentBottom")
-        self.contentBottom.setFrameShape(QFrame.NoFrame)
-        self.contentBottom.setFrameShadow(QFrame.Raised)
+        self.contentBottom.setFrameShape(QFrame.Shape.NoFrame)
+        self.contentBottom.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.contentBottom)
         self.verticalLayout_6.setSpacing(0)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.content = QFrame(self.contentBottom)
         self.content.setObjectName(u"content")
-        self.content.setFrameShape(QFrame.NoFrame)
-        self.content.setFrameShadow(QFrame.Raised)
+        self.content.setFrameShape(QFrame.Shape.NoFrame)
+        self.content.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_4 = QHBoxLayout(self.content)
         self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
@@ -840,8 +840,8 @@ class Ui_MainWindow(object):
         self.pagesContainer = QFrame(self.content)
         self.pagesContainer.setObjectName(u"pagesContainer")
         self.pagesContainer.setStyleSheet(u"")
-        self.pagesContainer.setFrameShape(QFrame.NoFrame)
-        self.pagesContainer.setFrameShadow(QFrame.Raised)
+        self.pagesContainer.setFrameShape(QFrame.Shape.NoFrame)
+        self.pagesContainer.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_15 = QVBoxLayout(self.pagesContainer)
         self.verticalLayout_15.setSpacing(0)
         self.verticalLayout_15.setObjectName(u"verticalLayout_15")
@@ -858,7 +858,7 @@ class Ui_MainWindow(object):
         self.gridLayout_Passive.setVerticalSpacing(0)
         self.label_PassiveSet = QLabel(self.Passive)
         self.label_PassiveSet.setObjectName(u"label_PassiveSet")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Maximum)
         sizePolicy3.setHorizontalStretch(0)
         sizePolicy3.setVerticalStretch(0)
         sizePolicy3.setHeightForWidth(self.label_PassiveSet.sizePolicy().hasHeightForWidth())
@@ -969,7 +969,25 @@ class Ui_MainWindow(object):
         self.label_Passive.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
 "color: rgb(170, 85, 255);")
 
-        self.gridLayout_Passive.addWidget(self.label_Passive, 0, 0, 1, 4, Qt.AlignHCenter)
+        self.gridLayout_Passive.addWidget(self.label_Passive, 0, 0, 1, 4, Qt.AlignmentFlag.AlignHCenter)
+
+        self.passiveRun = QPushButton(self.Passive)
+        self.passiveRun.setObjectName(u"passiveRun")
+        self.passiveRun.setMinimumSize(QSize(100, 0))
+        self.passiveRun.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(150, 200, 150);\n"
+"	background-color: rgb(0, 120, 0);\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 2px solid rgb(0,100,0);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"")
+
+        self.gridLayout_Passive.addWidget(self.passiveRun, 4, 2, 1, 2, Qt.AlignmentFlag.AlignHCenter)
 
         self.gridLayout_Passive.setRowStretch(0, 1)
         self.gridLayout_Passive.setRowStretch(1, 2)
@@ -981,40 +999,21 @@ class Ui_MainWindow(object):
         self.gridLayout_Passive.setColumnStretch(2, 1)
         self.gridLayout_Passive.setColumnStretch(3, 2)
         self.stackedWidget.addWidget(self.Passive)
+        
         self.Isometric = QWidget()
         self.Isometric.setObjectName(u"Isometric")
         self.gridLayout_Isometric = QGridLayout(self.Isometric)
         self.gridLayout_Isometric.setObjectName(u"gridLayout_Isometric")
         self.gridLayout_Isometric.setHorizontalSpacing(50)
         self.gridLayout_Isometric.setVerticalSpacing(0)
-        self.label_IsometricRestTime = QLabel(self.Isometric)
-        self.label_IsometricRestTime.setObjectName(u"label_IsometricRestTime")
+        self.label_IsometricTime = QLabel(self.Isometric)
+        self.label_IsometricTime.setObjectName(u"label_IsometricTime")
 
-        self.gridLayout_Isometric.addWidget(self.label_IsometricRestTime, 1, 2, 1, 1, Qt.AlignVCenter)
-
-        self.label_IsometricHoldTime = QLabel(self.Isometric)
-        self.label_IsometricHoldTime.setObjectName(u"label_IsometricHoldTime")
-
-        self.gridLayout_Isometric.addWidget(self.label_IsometricHoldTime, 4, 0, 1, 1, Qt.AlignVCenter)
-
-        self.lineEdit_IsometricSet = QLineEdit(self.Isometric)
-        self.lineEdit_IsometricSet.setObjectName(u"lineEdit_IsometricSet")
-
-        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricSet, 2, 1, 1, 1, Qt.AlignVCenter)
-
-        self.lineEdit_IsometricTime = QLineEdit(self.Isometric)
-        self.lineEdit_IsometricTime.setObjectName(u"lineEdit_IsometricTime")
-
-        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricTime, 1, 1, 1, 1, Qt.AlignVCenter)
-
-        self.lineEdit_IsometricRestTime = QLineEdit(self.Isometric)
-        self.lineEdit_IsometricRestTime.setObjectName(u"lineEdit_IsometricRestTime")
-
-        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricRestTime, 1, 3, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.label_IsometricTime, 1, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.groupBox_IsometricPos = QGroupBox(self.Isometric)
         self.groupBox_IsometricPos.setObjectName(u"groupBox_IsometricPos")
-        sizePolicy4 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Minimum)
+        sizePolicy4 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
         sizePolicy4.setHorizontalStretch(0)
         sizePolicy4.setVerticalStretch(0)
         sizePolicy4.setHeightForWidth(self.groupBox_IsometricPos.sizePolicy().hasHeightForWidth())
@@ -1026,72 +1025,110 @@ class Ui_MainWindow(object):
         self.label_IsometricPos1 = QLabel(self.groupBox_IsometricPos)
         self.label_IsometricPos1.setObjectName(u"label_IsometricPos1")
 
-        self.gridLayout_IsometricPos.addWidget(self.label_IsometricPos1, 0, 0, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_IsometricPos.addWidget(self.label_IsometricPos1, 0, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_IsometricPos1 = QLineEdit(self.groupBox_IsometricPos)
         self.lineEdit_IsometricPos1.setObjectName(u"lineEdit_IsometricPos1")
 
-        self.gridLayout_IsometricPos.addWidget(self.lineEdit_IsometricPos1, 0, 1, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_IsometricPos.addWidget(self.lineEdit_IsometricPos1, 0, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.label_IsometricPos2 = QLabel(self.groupBox_IsometricPos)
         self.label_IsometricPos2.setObjectName(u"label_IsometricPos2")
 
-        self.gridLayout_IsometricPos.addWidget(self.label_IsometricPos2, 1, 0, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_IsometricPos.addWidget(self.label_IsometricPos2, 1, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_IsometricPos2 = QLineEdit(self.groupBox_IsometricPos)
         self.lineEdit_IsometricPos2.setObjectName(u"lineEdit_IsometricPos2")
 
-        self.gridLayout_IsometricPos.addWidget(self.lineEdit_IsometricPos2, 1, 1, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_IsometricPos.addWidget(self.lineEdit_IsometricPos2, 1, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_IsometricPos3 = QLineEdit(self.groupBox_IsometricPos)
         self.lineEdit_IsometricPos3.setObjectName(u"lineEdit_IsometricPos3")
 
-        self.gridLayout_IsometricPos.addWidget(self.lineEdit_IsometricPos3, 2, 1, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_IsometricPos.addWidget(self.lineEdit_IsometricPos3, 2, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.label_IsometricPos3 = QLabel(self.groupBox_IsometricPos)
         self.label_IsometricPos3.setObjectName(u"label_IsometricPos3")
 
-        self.gridLayout_IsometricPos.addWidget(self.label_IsometricPos3, 2, 0, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_IsometricPos.addWidget(self.label_IsometricPos3, 2, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.gridLayout_IsometricPos.setColumnStretch(0, 1)
         self.gridLayout_IsometricPos.setColumnStretch(1, 3)
 
         self.gridLayout_Isometric.addWidget(self.groupBox_IsometricPos, 3, 2, 2, 2)
 
-        self.label_IsometricRepeat = QLabel(self.Isometric)
-        self.label_IsometricRepeat.setObjectName(u"label_IsometricRepeat")
+        self.lineEdit_IsometricSet = QLineEdit(self.Isometric)
+        self.lineEdit_IsometricSet.setObjectName(u"lineEdit_IsometricSet")
 
-        self.gridLayout_Isometric.addWidget(self.label_IsometricRepeat, 2, 2, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricSet, 2, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
-        self.lineEdit_IsometricRepeat = QLineEdit(self.Isometric)
-        self.lineEdit_IsometricRepeat.setObjectName(u"lineEdit_IsometricRepeat")
+        self.lineEdit_IsometricRestTime = QLineEdit(self.Isometric)
+        self.lineEdit_IsometricRestTime.setObjectName(u"lineEdit_IsometricRestTime")
 
-        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricRepeat, 2, 3, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricRestTime, 1, 3, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.label_IsometricSet = QLabel(self.Isometric)
         self.label_IsometricSet.setObjectName(u"label_IsometricSet")
 
-        self.gridLayout_Isometric.addWidget(self.label_IsometricSet, 2, 0, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.label_IsometricSet, 2, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
-        self.label_IsometricForce = QLabel(self.Isometric)
-        self.label_IsometricForce.setObjectName(u"label_IsometricForce")
+        self.label_IsometricRestTime = QLabel(self.Isometric)
+        self.label_IsometricRestTime.setObjectName(u"label_IsometricRestTime")
 
-        self.gridLayout_Isometric.addWidget(self.label_IsometricForce, 3, 0, 1, 1, Qt.AlignVCenter)
-
-        self.lineEdit_IsometricHoldTime = QLineEdit(self.Isometric)
-        self.lineEdit_IsometricHoldTime.setObjectName(u"lineEdit_IsometricHoldTime")
-
-        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricHoldTime, 4, 1, 1, 1, Qt.AlignVCenter)
-
-        self.label_IsometricTime = QLabel(self.Isometric)
-        self.label_IsometricTime.setObjectName(u"label_IsometricTime")
-
-        self.gridLayout_Isometric.addWidget(self.label_IsometricTime, 1, 0, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.label_IsometricRestTime, 1, 2, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.lineEdit_IsometricForce = QLineEdit(self.Isometric)
         self.lineEdit_IsometricForce.setObjectName(u"lineEdit_IsometricForce")
 
-        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricForce, 3, 1, 1, 1, Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricForce, 3, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
+
+        self.lineEdit_IsometricRepeat = QLineEdit(self.Isometric)
+        self.lineEdit_IsometricRepeat.setObjectName(u"lineEdit_IsometricRepeat")
+
+        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricRepeat, 2, 3, 1, 1, Qt.AlignmentFlag.AlignVCenter)
+
+        self.IsometricRun = QPushButton(self.Isometric)
+        self.IsometricRun.setObjectName(u"IsometricRun")
+        self.IsometricRun.setMinimumSize(QSize(100, 0))
+        self.IsometricRun.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(150, 200, 150);\n"
+"	background-color: rgb(0, 120, 0);\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 2px solid rgb(0,100,0);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"")
+
+        self.gridLayout_Isometric.addWidget(self.IsometricRun, 6, 2, 1, 2, Qt.AlignmentFlag.AlignHCenter)
+
+        self.label_IsometricRepeat = QLabel(self.Isometric)
+        self.label_IsometricRepeat.setObjectName(u"label_IsometricRepeat")
+
+        self.gridLayout_Isometric.addWidget(self.label_IsometricRepeat, 2, 2, 1, 1, Qt.AlignmentFlag.AlignVCenter)
+
+        self.label_IsometricForce = QLabel(self.Isometric)
+        self.label_IsometricForce.setObjectName(u"label_IsometricForce")
+
+        self.gridLayout_Isometric.addWidget(self.label_IsometricForce, 3, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
+
+        self.label_IsometricHoldTime = QLabel(self.Isometric)
+        self.label_IsometricHoldTime.setObjectName(u"label_IsometricHoldTime")
+
+        self.gridLayout_Isometric.addWidget(self.label_IsometricHoldTime, 4, 0, 1, 1, Qt.AlignmentFlag.AlignVCenter)
+
+        self.lineEdit_IsometricHoldTime = QLineEdit(self.Isometric)
+        self.lineEdit_IsometricHoldTime.setObjectName(u"lineEdit_IsometricHoldTime")
+
+        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricHoldTime, 4, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
+
+        self.lineEdit_IsometricTime = QLineEdit(self.Isometric)
+        self.lineEdit_IsometricTime.setObjectName(u"lineEdit_IsometricTime")
+
+        self.gridLayout_Isometric.addWidget(self.lineEdit_IsometricTime, 1, 1, 1, 1, Qt.AlignmentFlag.AlignVCenter)
 
         self.label_Isometric = QLabel(self.Isometric)
         self.label_Isometric.setObjectName(u"label_Isometric")
@@ -1100,7 +1137,11 @@ class Ui_MainWindow(object):
         self.label_Isometric.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
 "color: rgb(170, 85, 255)")
 
-        self.gridLayout_Isometric.addWidget(self.label_Isometric, 0, 0, 1, 4, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.gridLayout_Isometric.addWidget(self.label_Isometric, 0, 0, 1, 4, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignVCenter)
+
+        self.verticalSpacer = QSpacerItem(20, 10, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.gridLayout_Isometric.addItem(self.verticalSpacer, 5, 2, 1, 1)
 
         self.gridLayout_Isometric.setRowStretch(0, 1)
         self.gridLayout_Isometric.setRowStretch(1, 2)
@@ -1118,22 +1159,29 @@ class Ui_MainWindow(object):
         self.gridLayout_Isotonic.setObjectName(u"gridLayout_Isotonic")
         self.gridLayout_Isotonic.setHorizontalSpacing(50)
         self.gridLayout_Isotonic.setVerticalSpacing(0)
-        self.lineEdit_IsotonicTime = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicTime.setObjectName(u"lineEdit_IsotonicTime")
-        sizePolicy5 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Maximum)
+        self.lineEdit_IsotonicMinROM = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicMinROM.setObjectName(u"lineEdit_IsotonicMinROM")
+        sizePolicy5 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Maximum)
         sizePolicy5.setHorizontalStretch(0)
         sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicMinROM.sizePolicy().hasHeightForWidth())
+        self.lineEdit_IsotonicMinROM.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicMinROM, 3, 1, 1, 1)
+
+        self.lineEdit_IsotonicRepeat = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicRepeat.setObjectName(u"lineEdit_IsotonicRepeat")
+        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicRepeat.sizePolicy().hasHeightForWidth())
+        self.lineEdit_IsotonicRepeat.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicRepeat, 2, 3, 1, 1)
+
+        self.lineEdit_IsotonicTime = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicTime.setObjectName(u"lineEdit_IsotonicTime")
         sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicTime.sizePolicy().hasHeightForWidth())
         self.lineEdit_IsotonicTime.setSizePolicy(sizePolicy5)
 
         self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicTime, 1, 1, 1, 1)
-
-        self.lineEdit_IsotonicExtensionForce = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicExtensionForce.setObjectName(u"lineEdit_IsotonicExtensionForce")
-        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicExtensionForce.sizePolicy().hasHeightForWidth())
-        self.lineEdit_IsotonicExtensionForce.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicExtensionForce, 4, 1, 1, 1)
 
         self.label_IsotonicFlexionForce = QLabel(self.Isotonic)
         self.label_IsotonicFlexionForce.setObjectName(u"label_IsotonicFlexionForce")
@@ -1149,82 +1197,26 @@ class Ui_MainWindow(object):
 
         self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicRestTime, 1, 3, 1, 1)
 
-        self.lineEdit_IsotonicFlexionForce = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicFlexionForce.setObjectName(u"lineEdit_IsotonicFlexionForce")
-        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicFlexionForce.sizePolicy().hasHeightForWidth())
-        self.lineEdit_IsotonicFlexionForce.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicFlexionForce, 4, 3, 1, 1)
-
-        self.lineEdit_IsotonicSet = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicSet.setObjectName(u"lineEdit_IsotonicSet")
-        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicSet.sizePolicy().hasHeightForWidth())
-        self.lineEdit_IsotonicSet.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicSet, 2, 1, 1, 1)
-
-        self.lineEdit_IsotonicMaxROM = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicMaxROM.setObjectName(u"lineEdit_IsotonicMaxROM")
-        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicMaxROM.sizePolicy().hasHeightForWidth())
-        self.lineEdit_IsotonicMaxROM.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicMaxROM, 3, 3, 1, 1)
-
-        self.label_IsotonicRestTime = QLabel(self.Isotonic)
-        self.label_IsotonicRestTime.setObjectName(u"label_IsotonicRestTime")
-        sizePolicy3.setHeightForWidth(self.label_IsotonicRestTime.sizePolicy().hasHeightForWidth())
-        self.label_IsotonicRestTime.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Isotonic.addWidget(self.label_IsotonicRestTime, 1, 2, 1, 1)
-
-        self.lineEdit_IsotonicMinROM = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicMinROM.setObjectName(u"lineEdit_IsotonicMinROM")
-        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicMinROM.sizePolicy().hasHeightForWidth())
-        self.lineEdit_IsotonicMinROM.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicMinROM, 3, 1, 1, 1)
-
-        self.label_IsotonicRepeat = QLabel(self.Isotonic)
-        self.label_IsotonicRepeat.setObjectName(u"label_IsotonicRepeat")
-        sizePolicy3.setHeightForWidth(self.label_IsotonicRepeat.sizePolicy().hasHeightForWidth())
-        self.label_IsotonicRepeat.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Isotonic.addWidget(self.label_IsotonicRepeat, 2, 2, 1, 1)
-
-        self.label_IsotonicExtensionForce = QLabel(self.Isotonic)
-        self.label_IsotonicExtensionForce.setObjectName(u"label_IsotonicExtensionForce")
-        sizePolicy3.setHeightForWidth(self.label_IsotonicExtensionForce.sizePolicy().hasHeightForWidth())
-        self.label_IsotonicExtensionForce.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Isotonic.addWidget(self.label_IsotonicExtensionForce, 4, 0, 1, 1)
-
-        self.label_IsotonicMinROM = QLabel(self.Isotonic)
-        self.label_IsotonicMinROM.setObjectName(u"label_IsotonicMinROM")
-        sizePolicy3.setHeightForWidth(self.label_IsotonicMinROM.sizePolicy().hasHeightForWidth())
-        self.label_IsotonicMinROM.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Isotonic.addWidget(self.label_IsotonicMinROM, 3, 0, 1, 1)
-
-        self.lineEdit_IsotonicRepeat = QLineEdit(self.Isotonic)
-        self.lineEdit_IsotonicRepeat.setObjectName(u"lineEdit_IsotonicRepeat")
-        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicRepeat.sizePolicy().hasHeightForWidth())
-        self.lineEdit_IsotonicRepeat.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicRepeat, 2, 3, 1, 1)
-
-        self.label_IsotonicSet = QLabel(self.Isotonic)
-        self.label_IsotonicSet.setObjectName(u"label_IsotonicSet")
-        sizePolicy3.setHeightForWidth(self.label_IsotonicSet.sizePolicy().hasHeightForWidth())
-        self.label_IsotonicSet.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Isotonic.addWidget(self.label_IsotonicSet, 2, 0, 1, 1)
-
         self.label_IsotonicTime = QLabel(self.Isotonic)
         self.label_IsotonicTime.setObjectName(u"label_IsotonicTime")
         sizePolicy3.setHeightForWidth(self.label_IsotonicTime.sizePolicy().hasHeightForWidth())
         self.label_IsotonicTime.setSizePolicy(sizePolicy3)
 
         self.gridLayout_Isotonic.addWidget(self.label_IsotonicTime, 1, 0, 1, 1)
+
+        self.lineEdit_IsotonicExtensionForce = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicExtensionForce.setObjectName(u"lineEdit_IsotonicExtensionForce")
+        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicExtensionForce.sizePolicy().hasHeightForWidth())
+        self.lineEdit_IsotonicExtensionForce.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicExtensionForce, 4, 1, 1, 1)
+
+        self.lineEdit_IsotonicFlexionForce = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicFlexionForce.setObjectName(u"lineEdit_IsotonicFlexionForce")
+        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicFlexionForce.sizePolicy().hasHeightForWidth())
+        self.lineEdit_IsotonicFlexionForce.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicFlexionForce, 4, 3, 1, 1)
 
         self.label_IsotonicMaxROM = QLabel(self.Isotonic)
         self.label_IsotonicMaxROM.setObjectName(u"label_IsotonicMaxROM")
@@ -1233,6 +1225,20 @@ class Ui_MainWindow(object):
 
         self.gridLayout_Isotonic.addWidget(self.label_IsotonicMaxROM, 3, 2, 1, 1)
 
+        self.label_IsotonicRestTime = QLabel(self.Isotonic)
+        self.label_IsotonicRestTime.setObjectName(u"label_IsotonicRestTime")
+        sizePolicy3.setHeightForWidth(self.label_IsotonicRestTime.sizePolicy().hasHeightForWidth())
+        self.label_IsotonicRestTime.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Isotonic.addWidget(self.label_IsotonicRestTime, 1, 2, 1, 1)
+
+        self.lineEdit_IsotonicSet = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicSet.setObjectName(u"lineEdit_IsotonicSet")
+        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicSet.sizePolicy().hasHeightForWidth())
+        self.lineEdit_IsotonicSet.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicSet, 2, 1, 1, 1)
+
         self.label_Isotonic = QLabel(self.Isotonic)
         self.label_Isotonic.setObjectName(u"label_Isotonic")
         sizePolicy3.setHeightForWidth(self.label_Isotonic.sizePolicy().hasHeightForWidth())
@@ -1240,17 +1246,63 @@ class Ui_MainWindow(object):
         self.label_Isotonic.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
 "color: rgb(170, 85, 255);")
 
-        self.gridLayout_Isotonic.addWidget(self.label_Isotonic, 0, 0, 1, 4, Qt.AlignHCenter)
+        self.gridLayout_Isotonic.addWidget(self.label_Isotonic, 0, 0, 1, 4, Qt.AlignmentFlag.AlignHCenter)
+
+        self.label_IsotonicSet = QLabel(self.Isotonic)
+        self.label_IsotonicSet.setObjectName(u"label_IsotonicSet")
+        sizePolicy3.setHeightForWidth(self.label_IsotonicSet.sizePolicy().hasHeightForWidth())
+        self.label_IsotonicSet.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Isotonic.addWidget(self.label_IsotonicSet, 2, 0, 1, 1)
+
+        self.label_IsotonicMinROM = QLabel(self.Isotonic)
+        self.label_IsotonicMinROM.setObjectName(u"label_IsotonicMinROM")
+        sizePolicy3.setHeightForWidth(self.label_IsotonicMinROM.sizePolicy().hasHeightForWidth())
+        self.label_IsotonicMinROM.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Isotonic.addWidget(self.label_IsotonicMinROM, 3, 0, 1, 1)
+
+        self.label_IsotonicRepeat = QLabel(self.Isotonic)
+        self.label_IsotonicRepeat.setObjectName(u"label_IsotonicRepeat")
+        sizePolicy3.setHeightForWidth(self.label_IsotonicRepeat.sizePolicy().hasHeightForWidth())
+        self.label_IsotonicRepeat.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Isotonic.addWidget(self.label_IsotonicRepeat, 2, 2, 1, 1)
+
+        self.lineEdit_IsotonicMaxROM = QLineEdit(self.Isotonic)
+        self.lineEdit_IsotonicMaxROM.setObjectName(u"lineEdit_IsotonicMaxROM")
+        sizePolicy5.setHeightForWidth(self.lineEdit_IsotonicMaxROM.sizePolicy().hasHeightForWidth())
+        self.lineEdit_IsotonicMaxROM.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Isotonic.addWidget(self.lineEdit_IsotonicMaxROM, 3, 3, 1, 1)
+
+        self.label_IsotonicExtensionForce = QLabel(self.Isotonic)
+        self.label_IsotonicExtensionForce.setObjectName(u"label_IsotonicExtensionForce")
+        sizePolicy3.setHeightForWidth(self.label_IsotonicExtensionForce.sizePolicy().hasHeightForWidth())
+        self.label_IsotonicExtensionForce.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Isotonic.addWidget(self.label_IsotonicExtensionForce, 4, 0, 1, 1)
+
+        self.isotonicRun = QPushButton(self.Isotonic)
+        self.isotonicRun.setObjectName(u"isotonicRun")
+        self.isotonicRun.setMinimumSize(QSize(100, 0))
+        self.isotonicRun.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(150, 200, 150);\n"
+"	background-color: rgb(0, 120, 0);\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 2px solid rgb(0,100,0);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"")
+
+        self.gridLayout_Isotonic.addWidget(self.isotonicRun, 5, 2, 1, 2, Qt.AlignmentFlag.AlignHCenter)
 
         self.gridLayout_Isotonic.setRowStretch(0, 1)
-        self.gridLayout_Isotonic.setRowStretch(1, 2)
-        self.gridLayout_Isotonic.setRowStretch(2, 2)
-        self.gridLayout_Isotonic.setRowStretch(3, 2)
-        self.gridLayout_Isotonic.setRowStretch(4, 2)
         self.gridLayout_Isotonic.setColumnStretch(0, 1)
-        self.gridLayout_Isotonic.setColumnStretch(1, 2)
-        self.gridLayout_Isotonic.setColumnStretch(2, 1)
-        self.gridLayout_Isotonic.setColumnStretch(3, 2)
         self.stackedWidget.addWidget(self.Isotonic)
         self.Isokinetic = QWidget()
         self.Isokinetic.setObjectName(u"Isokinetic")
@@ -1263,109 +1315,80 @@ class Ui_MainWindow(object):
 
         self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticFlexionForce, 4, 3, 1, 1)
 
-        self.comboBox_IsokineticEccCon = QComboBox(self.Isokinetic)
-        self.comboBox_IsokineticEccCon.addItem("")
-        self.comboBox_IsokineticEccCon.addItem("")
-        self.comboBox_IsokineticEccCon.addItem("")
-        self.comboBox_IsokineticEccCon.addItem("")
-        self.comboBox_IsokineticEccCon.setObjectName(u"comboBox_IsokineticEccCon")
+        self.label_IsokineticExtensionForce = QLabel(self.Isokinetic)
+        self.label_IsokineticExtensionForce.setObjectName(u"label_IsokineticExtensionForce")
 
-        self.gridLayout_Isokinetic.addWidget(self.comboBox_IsokineticEccCon, 6, 2, 1, 2)
-
-        self.label_IsokineticSet = QLabel(self.Isokinetic)
-        self.label_IsokineticSet.setObjectName(u"label_IsokineticSet")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticSet, 2, 0, 1, 1)
-
-        self.lineEdit_IsokineticRestTime = QLineEdit(self.Isokinetic)
-        self.lineEdit_IsokineticRestTime.setObjectName(u"lineEdit_IsokineticRestTime")
-
-        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticRestTime, 1, 3, 1, 1)
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticExtensionForce, 4, 0, 1, 1)
 
         self.lineEdit_IsokineticMinROM = QLineEdit(self.Isokinetic)
         self.lineEdit_IsokineticMinROM.setObjectName(u"lineEdit_IsokineticMinROM")
 
         self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticMinROM, 3, 1, 1, 1)
 
-        self.label_IsokineticMaxROM = QLabel(self.Isokinetic)
-        self.label_IsokineticMaxROM.setObjectName(u"label_IsokineticMaxROM")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticMaxROM, 3, 2, 1, 1)
-
-        self.label_IsokineticFlexionSpeed = QLabel(self.Isokinetic)
-        self.label_IsokineticFlexionSpeed.setObjectName(u"label_IsokineticFlexionSpeed")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticFlexionSpeed, 5, 2, 1, 1)
-
-        self.label_IsokineticTime = QLabel(self.Isokinetic)
-        self.label_IsokineticTime.setObjectName(u"label_IsokineticTime")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticTime, 1, 0, 1, 1)
-
-        self.lineEdit_IsokineticExtensionForce = QLineEdit(self.Isokinetic)
-        self.lineEdit_IsokineticExtensionForce.setObjectName(u"lineEdit_IsokineticExtensionForce")
-
-        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticExtensionForce, 4, 1, 1, 1)
-
-        self.label_IsokineticRestTime = QLabel(self.Isokinetic)
-        self.label_IsokineticRestTime.setObjectName(u"label_IsokineticRestTime")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticRestTime, 1, 2, 1, 1)
-
-        self.label_IsokineticExtensionForce = QLabel(self.Isokinetic)
-        self.label_IsokineticExtensionForce.setObjectName(u"label_IsokineticExtensionForce")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticExtensionForce, 4, 0, 1, 1)
-
-        self.label_IsokineticFlexionForce = QLabel(self.Isokinetic)
-        self.label_IsokineticFlexionForce.setObjectName(u"label_IsokineticFlexionForce")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticFlexionForce, 4, 2, 1, 1)
-
-        self.lineEdit_IsokineticTime = QLineEdit(self.Isokinetic)
-        self.lineEdit_IsokineticTime.setObjectName(u"lineEdit_IsokineticTime")
-
-        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticTime, 1, 1, 1, 1)
-
         self.lineEdit_IsokineticRepeat = QLineEdit(self.Isokinetic)
         self.lineEdit_IsokineticRepeat.setObjectName(u"lineEdit_IsokineticRepeat")
 
         self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticRepeat, 2, 3, 1, 1)
-
-        self.label_IsokineticRepeat = QLabel(self.Isokinetic)
-        self.label_IsokineticRepeat.setObjectName(u"label_IsokineticRepeat")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticRepeat, 2, 2, 1, 1)
-
-        self.lineEdit_IsokineticMaxROM = QLineEdit(self.Isokinetic)
-        self.lineEdit_IsokineticMaxROM.setObjectName(u"lineEdit_IsokineticMaxROM")
-
-        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticMaxROM, 3, 3, 1, 1)
-
-        self.label_IsokineticMinROM = QLabel(self.Isokinetic)
-        self.label_IsokineticMinROM.setObjectName(u"label_IsokineticMinROM")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticMinROM, 3, 0, 1, 1)
-
-        self.label_IsokineticExtensionSpeed = QLabel(self.Isokinetic)
-        self.label_IsokineticExtensionSpeed.setObjectName(u"label_IsokineticExtensionSpeed")
-
-        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticExtensionSpeed, 5, 0, 1, 1)
 
         self.lineEdit_IsokineticSet = QLineEdit(self.Isokinetic)
         self.lineEdit_IsokineticSet.setObjectName(u"lineEdit_IsokineticSet")
 
         self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticSet, 2, 1, 1, 1)
 
+        self.label_IsokineticTime = QLabel(self.Isokinetic)
+        self.label_IsokineticTime.setObjectName(u"label_IsokineticTime")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticTime, 1, 0, 1, 1)
+
+        self.label_IsokineticRepeat = QLabel(self.Isokinetic)
+        self.label_IsokineticRepeat.setObjectName(u"label_IsokineticRepeat")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticRepeat, 2, 2, 1, 1)
+
+        self.label_IsokineticMaxROM = QLabel(self.Isokinetic)
+        self.label_IsokineticMaxROM.setObjectName(u"label_IsokineticMaxROM")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticMaxROM, 3, 2, 1, 1)
+
+        self.label_IsokineticExtensionSpeed = QLabel(self.Isokinetic)
+        self.label_IsokineticExtensionSpeed.setObjectName(u"label_IsokineticExtensionSpeed")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticExtensionSpeed, 5, 0, 1, 1)
+
         self.lineEdit_IsokineticExtensionSpeed = QLineEdit(self.Isokinetic)
         self.lineEdit_IsokineticExtensionSpeed.setObjectName(u"lineEdit_IsokineticExtensionSpeed")
 
         self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticExtensionSpeed, 5, 1, 1, 1)
 
-        self.lineEdit_IsokineticFlexionSpeed = QLineEdit(self.Isokinetic)
-        self.lineEdit_IsokineticFlexionSpeed.setObjectName(u"lineEdit_IsokineticFlexionSpeed")
+        self.label_IsokineticMinROM = QLabel(self.Isokinetic)
+        self.label_IsokineticMinROM.setObjectName(u"label_IsokineticMinROM")
 
-        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticFlexionSpeed, 5, 3, 1, 1)
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticMinROM, 3, 0, 1, 1)
+
+        self.lineEdit_IsokineticRestTime = QLineEdit(self.Isokinetic)
+        self.lineEdit_IsokineticRestTime.setObjectName(u"lineEdit_IsokineticRestTime")
+
+        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticRestTime, 1, 3, 1, 1)
+
+        self.label_IsokineticRestTime = QLabel(self.Isokinetic)
+        self.label_IsokineticRestTime.setObjectName(u"label_IsokineticRestTime")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticRestTime, 1, 2, 1, 1)
+
+        self.label_IsokineticSet = QLabel(self.Isokinetic)
+        self.label_IsokineticSet.setObjectName(u"label_IsokineticSet")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticSet, 2, 0, 1, 1)
+
+        self.label_IsokineticFlexionForce = QLabel(self.Isokinetic)
+        self.label_IsokineticFlexionForce.setObjectName(u"label_IsokineticFlexionForce")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticFlexionForce, 4, 2, 1, 1)
+
+        self.lineEdit_IsokineticMaxROM = QLineEdit(self.Isokinetic)
+        self.lineEdit_IsokineticMaxROM.setObjectName(u"lineEdit_IsokineticMaxROM")
+
+        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticMaxROM, 3, 3, 1, 1)
 
         self.label_Isokinetic = QLabel(self.Isokinetic)
         self.label_Isokinetic.setObjectName(u"label_Isokinetic")
@@ -1374,12 +1397,56 @@ class Ui_MainWindow(object):
         self.label_Isokinetic.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
 "color: rgb(170, 85, 255);")
 
-        self.gridLayout_Isokinetic.addWidget(self.label_Isokinetic, 0, 0, 1, 4, Qt.AlignHCenter)
+        self.gridLayout_Isokinetic.addWidget(self.label_Isokinetic, 0, 0, 1, 4, Qt.AlignmentFlag.AlignHCenter)
+
+        self.lineEdit_IsokineticFlexionSpeed = QLineEdit(self.Isokinetic)
+        self.lineEdit_IsokineticFlexionSpeed.setObjectName(u"lineEdit_IsokineticFlexionSpeed")
+
+        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticFlexionSpeed, 5, 3, 1, 1)
+
+        self.lineEdit_IsokineticExtensionForce = QLineEdit(self.Isokinetic)
+        self.lineEdit_IsokineticExtensionForce.setObjectName(u"lineEdit_IsokineticExtensionForce")
+
+        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticExtensionForce, 4, 1, 1, 1)
+
+        self.lineEdit_IsokineticTime = QLineEdit(self.Isokinetic)
+        self.lineEdit_IsokineticTime.setObjectName(u"lineEdit_IsokineticTime")
+
+        self.gridLayout_Isokinetic.addWidget(self.lineEdit_IsokineticTime, 1, 1, 1, 1)
+
+        self.label_IsokineticFlexionSpeed = QLabel(self.Isokinetic)
+        self.label_IsokineticFlexionSpeed.setObjectName(u"label_IsokineticFlexionSpeed")
+
+        self.gridLayout_Isokinetic.addWidget(self.label_IsokineticFlexionSpeed, 5, 2, 1, 1)
+
+        self.comboBox_IsokineticEccCon = QComboBox(self.Isokinetic)
+        self.comboBox_IsokineticEccCon.addItem("")
+        self.comboBox_IsokineticEccCon.addItem("")
+        self.comboBox_IsokineticEccCon.addItem("")
+        self.comboBox_IsokineticEccCon.addItem("")
+        self.comboBox_IsokineticEccCon.setObjectName(u"comboBox_IsokineticEccCon")
+
+        self.gridLayout_Isokinetic.addWidget(self.comboBox_IsokineticEccCon, 6, 0, 1, 2)
+
+        self.isokineticRun = QPushButton(self.Isokinetic)
+        self.isokineticRun.setObjectName(u"isokineticRun")
+        self.isokineticRun.setMinimumSize(QSize(100, 0))
+        self.isokineticRun.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(150, 200, 150);\n"
+"	background-color: rgb(0, 120, 0);\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 2px solid rgb(0,100,0);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"")
+
+        self.gridLayout_Isokinetic.addWidget(self.isokineticRun, 6, 2, 1, 2, Qt.AlignmentFlag.AlignHCenter)
 
         self.gridLayout_Isokinetic.setColumnStretch(0, 1)
-        self.gridLayout_Isokinetic.setColumnStretch(1, 2)
-        self.gridLayout_Isokinetic.setColumnStretch(2, 1)
-        self.gridLayout_Isokinetic.setColumnStretch(3, 2)
         self.stackedWidget.addWidget(self.Isokinetic)
         self.Spring = QWidget()
         self.Spring.setObjectName(u"Spring")
@@ -1387,28 +1454,12 @@ class Ui_MainWindow(object):
         self.gridLayout_Spring.setObjectName(u"gridLayout_Spring")
         self.gridLayout_Spring.setHorizontalSpacing(50)
         self.gridLayout_Spring.setVerticalSpacing(0)
-        self.label_Spring = QLabel(self.Spring)
-        self.label_Spring.setObjectName(u"label_Spring")
-        sizePolicy3.setHeightForWidth(self.label_Spring.sizePolicy().hasHeightForWidth())
-        self.label_Spring.setSizePolicy(sizePolicy3)
-        self.label_Spring.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
-"color: rgb(170, 85, 255);")
+        self.lineEdit_SpringMaxROM = QLineEdit(self.Spring)
+        self.lineEdit_SpringMaxROM.setObjectName(u"lineEdit_SpringMaxROM")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringMaxROM.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringMaxROM.setSizePolicy(sizePolicy5)
 
-        self.gridLayout_Spring.addWidget(self.label_Spring, 0, 0, 1, 4, Qt.AlignHCenter)
-
-        self.label_SpringTime = QLabel(self.Spring)
-        self.label_SpringTime.setObjectName(u"label_SpringTime")
-        sizePolicy3.setHeightForWidth(self.label_SpringTime.sizePolicy().hasHeightForWidth())
-        self.label_SpringTime.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Spring.addWidget(self.label_SpringTime, 1, 0, 1, 1)
-
-        self.lineEdit_SpringTime = QLineEdit(self.Spring)
-        self.lineEdit_SpringTime.setObjectName(u"lineEdit_SpringTime")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringTime.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringTime.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringTime, 1, 1, 1, 1)
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringMaxROM, 3, 3, 1, 1)
 
         self.label_SpringRestTime = QLabel(self.Spring)
         self.label_SpringRestTime.setObjectName(u"label_SpringRestTime")
@@ -1417,68 +1468,12 @@ class Ui_MainWindow(object):
 
         self.gridLayout_Spring.addWidget(self.label_SpringRestTime, 1, 2, 1, 1)
 
-        self.lineEdit_SpringRestTime = QLineEdit(self.Spring)
-        self.lineEdit_SpringRestTime.setObjectName(u"lineEdit_SpringRestTime")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringRestTime.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringRestTime.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringRestTime, 1, 3, 1, 1)
-
         self.label_SpringSet = QLabel(self.Spring)
         self.label_SpringSet.setObjectName(u"label_SpringSet")
         sizePolicy3.setHeightForWidth(self.label_SpringSet.sizePolicy().hasHeightForWidth())
         self.label_SpringSet.setSizePolicy(sizePolicy3)
 
         self.gridLayout_Spring.addWidget(self.label_SpringSet, 2, 0, 1, 1)
-
-        self.lineEdit_SpringSet = QLineEdit(self.Spring)
-        self.lineEdit_SpringSet.setObjectName(u"lineEdit_SpringSet")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringSet.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringSet.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringSet, 2, 1, 1, 1)
-
-        self.label_SpringRepeat = QLabel(self.Spring)
-        self.label_SpringRepeat.setObjectName(u"label_SpringRepeat")
-        sizePolicy3.setHeightForWidth(self.label_SpringRepeat.sizePolicy().hasHeightForWidth())
-        self.label_SpringRepeat.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Spring.addWidget(self.label_SpringRepeat, 2, 2, 1, 1)
-
-        self.lineEdit_SpringRepeat = QLineEdit(self.Spring)
-        self.lineEdit_SpringRepeat.setObjectName(u"lineEdit_SpringRepeat")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringRepeat.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringRepeat.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringRepeat, 2, 3, 1, 1)
-
-        self.label_SpringMinROM = QLabel(self.Spring)
-        self.label_SpringMinROM.setObjectName(u"label_SpringMinROM")
-        sizePolicy3.setHeightForWidth(self.label_SpringMinROM.sizePolicy().hasHeightForWidth())
-        self.label_SpringMinROM.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Spring.addWidget(self.label_SpringMinROM, 3, 0, 1, 1)
-
-        self.lineEdit_SpringMinROM = QLineEdit(self.Spring)
-        self.lineEdit_SpringMinROM.setObjectName(u"lineEdit_SpringMinROM")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringMinROM.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringMinROM.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringMinROM, 3, 1, 1, 1)
-
-        self.label_SpringMaxROM = QLabel(self.Spring)
-        self.label_SpringMaxROM.setObjectName(u"label_SpringMaxROM")
-        sizePolicy3.setHeightForWidth(self.label_SpringMaxROM.sizePolicy().hasHeightForWidth())
-        self.label_SpringMaxROM.setSizePolicy(sizePolicy3)
-
-        self.gridLayout_Spring.addWidget(self.label_SpringMaxROM, 3, 2, 1, 1)
-
-        self.lineEdit_SpringMaxROM = QLineEdit(self.Spring)
-        self.lineEdit_SpringMaxROM.setObjectName(u"lineEdit_SpringMaxROM")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringMaxROM.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringMaxROM.setSizePolicy(sizePolicy5)
-
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringMaxROM, 3, 3, 1, 1)
 
         self.label_SpringInitialPos = QLabel(self.Spring)
         self.label_SpringInitialPos.setObjectName(u"label_SpringInitialPos")
@@ -1487,12 +1482,54 @@ class Ui_MainWindow(object):
 
         self.gridLayout_Spring.addWidget(self.label_SpringInitialPos, 4, 0, 1, 1)
 
+        self.lineEdit_SpringStiffness = QLineEdit(self.Spring)
+        self.lineEdit_SpringStiffness.setObjectName(u"lineEdit_SpringStiffness")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringStiffness.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringStiffness.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringStiffness, 4, 3, 1, 1)
+
         self.lineEdit_SpringInitialPos = QLineEdit(self.Spring)
         self.lineEdit_SpringInitialPos.setObjectName(u"lineEdit_SpringInitialPos")
         sizePolicy5.setHeightForWidth(self.lineEdit_SpringInitialPos.sizePolicy().hasHeightForWidth())
         self.lineEdit_SpringInitialPos.setSizePolicy(sizePolicy5)
 
         self.gridLayout_Spring.addWidget(self.lineEdit_SpringInitialPos, 4, 1, 1, 1)
+
+        self.lineEdit_SpringRestTime = QLineEdit(self.Spring)
+        self.lineEdit_SpringRestTime.setObjectName(u"lineEdit_SpringRestTime")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringRestTime.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringRestTime.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringRestTime, 1, 3, 1, 1)
+
+        self.lineEdit_SpringMinROM = QLineEdit(self.Spring)
+        self.lineEdit_SpringMinROM.setObjectName(u"lineEdit_SpringMinROM")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringMinROM.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringMinROM.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringMinROM, 3, 1, 1, 1)
+
+        self.lineEdit_SpringTime = QLineEdit(self.Spring)
+        self.lineEdit_SpringTime.setObjectName(u"lineEdit_SpringTime")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringTime.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringTime.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringTime, 1, 1, 1, 1)
+
+        self.label_SpringRepeat = QLabel(self.Spring)
+        self.label_SpringRepeat.setObjectName(u"label_SpringRepeat")
+        sizePolicy3.setHeightForWidth(self.label_SpringRepeat.sizePolicy().hasHeightForWidth())
+        self.label_SpringRepeat.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Spring.addWidget(self.label_SpringRepeat, 2, 2, 1, 1)
+
+        self.label_SpringTime = QLabel(self.Spring)
+        self.label_SpringTime.setObjectName(u"label_SpringTime")
+        sizePolicy3.setHeightForWidth(self.label_SpringTime.sizePolicy().hasHeightForWidth())
+        self.label_SpringTime.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Spring.addWidget(self.label_SpringTime, 1, 0, 1, 1)
 
         self.label_SpringStiffness = QLabel(self.Spring)
         self.label_SpringStiffness.setObjectName(u"label_SpringStiffness")
@@ -1501,12 +1538,65 @@ class Ui_MainWindow(object):
 
         self.gridLayout_Spring.addWidget(self.label_SpringStiffness, 4, 2, 1, 1)
 
-        self.lineEdit_SpringStiffness = QLineEdit(self.Spring)
-        self.lineEdit_SpringStiffness.setObjectName(u"lineEdit_SpringStiffness")
-        sizePolicy5.setHeightForWidth(self.lineEdit_SpringStiffness.sizePolicy().hasHeightForWidth())
-        self.lineEdit_SpringStiffness.setSizePolicy(sizePolicy5)
+        self.lineEdit_SpringSet = QLineEdit(self.Spring)
+        self.lineEdit_SpringSet.setObjectName(u"lineEdit_SpringSet")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringSet.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringSet.setSizePolicy(sizePolicy5)
 
-        self.gridLayout_Spring.addWidget(self.lineEdit_SpringStiffness, 4, 3, 1, 1)
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringSet, 2, 1, 1, 1)
+
+        self.label_SpringMaxROM = QLabel(self.Spring)
+        self.label_SpringMaxROM.setObjectName(u"label_SpringMaxROM")
+        sizePolicy3.setHeightForWidth(self.label_SpringMaxROM.sizePolicy().hasHeightForWidth())
+        self.label_SpringMaxROM.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Spring.addWidget(self.label_SpringMaxROM, 3, 2, 1, 1)
+
+        self.label_SpringMinROM = QLabel(self.Spring)
+        self.label_SpringMinROM.setObjectName(u"label_SpringMinROM")
+        sizePolicy3.setHeightForWidth(self.label_SpringMinROM.sizePolicy().hasHeightForWidth())
+        self.label_SpringMinROM.setSizePolicy(sizePolicy3)
+
+        self.gridLayout_Spring.addWidget(self.label_SpringMinROM, 3, 0, 1, 1)
+
+        self.label_Spring = QLabel(self.Spring)
+        self.label_Spring.setObjectName(u"label_Spring")
+        sizePolicy3.setHeightForWidth(self.label_Spring.sizePolicy().hasHeightForWidth())
+        self.label_Spring.setSizePolicy(sizePolicy3)
+        self.label_Spring.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
+"color: rgb(170, 85, 255);")
+
+        self.gridLayout_Spring.addWidget(self.label_Spring, 0, 0, 1, 4, Qt.AlignmentFlag.AlignHCenter)
+
+        self.lineEdit_SpringRepeat = QLineEdit(self.Spring)
+        self.lineEdit_SpringRepeat.setObjectName(u"lineEdit_SpringRepeat")
+        sizePolicy5.setHeightForWidth(self.lineEdit_SpringRepeat.sizePolicy().hasHeightForWidth())
+        self.lineEdit_SpringRepeat.setSizePolicy(sizePolicy5)
+
+        self.gridLayout_Spring.addWidget(self.lineEdit_SpringRepeat, 2, 3, 1, 1)
+
+        self.springRun = QPushButton(self.Spring)
+        self.springRun.setObjectName(u"springRun")
+        sizePolicy6 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Maximum)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.springRun.sizePolicy().hasHeightForWidth())
+        self.springRun.setSizePolicy(sizePolicy6)
+        self.springRun.setMinimumSize(QSize(100, 0))
+        self.springRun.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(150, 200, 150);\n"
+"	background-color: rgb(0, 120, 0);\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 2px solid rgb(0,100,0);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"")
+
+        self.gridLayout_Spring.addWidget(self.springRun, 5, 2, 1, 2, Qt.AlignmentFlag.AlignHCenter)
 
         self.gridLayout_Spring.setColumnStretch(0, 1)
         self.gridLayout_Spring.setColumnStretch(1, 2)
@@ -1625,7 +1715,25 @@ class Ui_MainWindow(object):
         self.label_Water.setStyleSheet(u"font: 30pt \"Segoe UI\";\n"
 "color: rgb(170, 85, 255);")
 
-        self.gridLayout_Water.addWidget(self.label_Water, 0, 0, 1, 4, Qt.AlignHCenter)
+        self.gridLayout_Water.addWidget(self.label_Water, 0, 0, 1, 4, Qt.AlignmentFlag.AlignHCenter)
+
+        self.waterRun = QPushButton(self.Water)
+        self.waterRun.setObjectName(u"waterRun")
+        self.waterRun.setMinimumSize(QSize(100, 0))
+        self.waterRun.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(150, 200, 150);\n"
+"	background-color: rgb(0, 120, 0);\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"QPushButton:hover{\n"
+"	border: 2px solid rgb(0,100,0);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(0,50,0);\n"
+"}\n"
+"")
+
+        self.gridLayout_Water.addWidget(self.waterRun, 4, 2, 1, 2, Qt.AlignmentFlag.AlignHCenter)
 
         self.gridLayout_Water.setColumnStretch(0, 1)
         self.gridLayout_Water.setColumnStretch(1, 2)
@@ -1641,8 +1749,8 @@ class Ui_MainWindow(object):
         self.verticalLayout.setContentsMargins(10, 10, 10, 10)
         self.row_1 = QFrame(self.widgets)
         self.row_1.setObjectName(u"row_1")
-        self.row_1.setFrameShape(QFrame.StyledPanel)
-        self.row_1.setFrameShadow(QFrame.Raised)
+        self.row_1.setFrameShape(QFrame.Shape.StyledPanel)
+        self.row_1.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_16 = QVBoxLayout(self.row_1)
         self.verticalLayout_16.setSpacing(0)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
@@ -1651,8 +1759,8 @@ class Ui_MainWindow(object):
         self.frame_div_content_1.setObjectName(u"frame_div_content_1")
         self.frame_div_content_1.setMinimumSize(QSize(0, 110))
         self.frame_div_content_1.setMaximumSize(QSize(16777215, 110))
-        self.frame_div_content_1.setFrameShape(QFrame.NoFrame)
-        self.frame_div_content_1.setFrameShadow(QFrame.Raised)
+        self.frame_div_content_1.setFrameShape(QFrame.Shape.NoFrame)
+        self.frame_div_content_1.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_17 = QVBoxLayout(self.frame_div_content_1)
         self.verticalLayout_17.setSpacing(0)
         self.verticalLayout_17.setObjectName(u"verticalLayout_17")
@@ -1660,8 +1768,8 @@ class Ui_MainWindow(object):
         self.frame_title_wid_1 = QFrame(self.frame_div_content_1)
         self.frame_title_wid_1.setObjectName(u"frame_title_wid_1")
         self.frame_title_wid_1.setMaximumSize(QSize(16777215, 35))
-        self.frame_title_wid_1.setFrameShape(QFrame.StyledPanel)
-        self.frame_title_wid_1.setFrameShadow(QFrame.Raised)
+        self.frame_title_wid_1.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_title_wid_1.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_18 = QVBoxLayout(self.frame_title_wid_1)
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
         self.labelBoxBlenderInstalation = QLabel(self.frame_title_wid_1)
@@ -1676,8 +1784,8 @@ class Ui_MainWindow(object):
 
         self.frame_content_wid_1 = QFrame(self.frame_div_content_1)
         self.frame_content_wid_1.setObjectName(u"frame_content_wid_1")
-        self.frame_content_wid_1.setFrameShape(QFrame.NoFrame)
-        self.frame_content_wid_1.setFrameShadow(QFrame.Raised)
+        self.frame_content_wid_1.setFrameShape(QFrame.Shape.NoFrame)
+        self.frame_content_wid_1.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_9 = QHBoxLayout(self.frame_content_wid_1)
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
         self.gridLayout = QGridLayout()
@@ -1694,10 +1802,10 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setMinimumSize(QSize(150, 30))
         self.pushButton.setFont(font)
-        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.pushButton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.pushButton.setStyleSheet(u"background-color: rgb(52, 59, 72);")
         icon4 = QIcon()
-        icon4.addFile(u":/icons/images/icons/cil-folder-open.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/icons/images/icons/cil-folder-open.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.pushButton.setIcon(icon4)
 
         self.gridLayout.addWidget(self.pushButton, 0, 1, 1, 1)
@@ -1706,7 +1814,7 @@ class Ui_MainWindow(object):
         self.labelVersion_3.setObjectName(u"labelVersion_3")
         self.labelVersion_3.setStyleSheet(u"color: rgb(113, 126, 149);")
         self.labelVersion_3.setLineWidth(1)
-        self.labelVersion_3.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.labelVersion_3.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
         self.gridLayout.addWidget(self.labelVersion_3, 1, 0, 1, 2)
 
@@ -1725,8 +1833,8 @@ class Ui_MainWindow(object):
         self.row_2 = QFrame(self.widgets)
         self.row_2.setObjectName(u"row_2")
         self.row_2.setMinimumSize(QSize(0, 150))
-        self.row_2.setFrameShape(QFrame.StyledPanel)
-        self.row_2.setFrameShadow(QFrame.Raised)
+        self.row_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.row_2.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_19 = QVBoxLayout(self.row_2)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.gridLayout_2 = QGridLayout()
@@ -1747,7 +1855,7 @@ class Ui_MainWindow(object):
         self.verticalSlider = QSlider(self.row_2)
         self.verticalSlider.setObjectName(u"verticalSlider")
         self.verticalSlider.setStyleSheet(u"")
-        self.verticalSlider.setOrientation(Qt.Vertical)
+        self.verticalSlider.setOrientation(Qt.Orientation.Vertical)
 
         self.gridLayout_2.addWidget(self.verticalSlider, 0, 2, 3, 1)
 
@@ -1755,7 +1863,7 @@ class Ui_MainWindow(object):
         self.verticalScrollBar.setObjectName(u"verticalScrollBar")
         self.verticalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
 " QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-        self.verticalScrollBar.setOrientation(Qt.Vertical)
+        self.verticalScrollBar.setOrientation(Qt.Orientation.Vertical)
 
         self.gridLayout_2.addWidget(self.verticalScrollBar, 0, 4, 3, 1)
 
@@ -1767,9 +1875,9 @@ class Ui_MainWindow(object):
 " QScrollBar:horizontal {\n"
 "    background: rgb(52, 59, 72);\n"
 " }")
-        self.scrollArea.setFrameShape(QFrame.NoFrame)
-        self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.scrollArea.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
@@ -1813,16 +1921,16 @@ class Ui_MainWindow(object):
         self.horizontalScrollBar.setSizePolicy(sizePolicy)
         self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
 " QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-        self.horizontalScrollBar.setOrientation(Qt.Horizontal)
+        self.horizontalScrollBar.setOrientation(Qt.Orientation.Horizontal)
 
         self.gridLayout_2.addWidget(self.horizontalScrollBar, 1, 3, 1, 1)
 
         self.commandLinkButton = QCommandLinkButton(self.row_2)
         self.commandLinkButton.setObjectName(u"commandLinkButton")
-        self.commandLinkButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.commandLinkButton.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.commandLinkButton.setStyleSheet(u"")
         icon5 = QIcon()
-        icon5.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.commandLinkButton.setIcon(icon5)
 
         self.gridLayout_2.addWidget(self.commandLinkButton, 1, 6, 1, 1)
@@ -1830,7 +1938,7 @@ class Ui_MainWindow(object):
         self.horizontalSlider = QSlider(self.row_2)
         self.horizontalSlider.setObjectName(u"horizontalSlider")
         self.horizontalSlider.setStyleSheet(u"")
-        self.horizontalSlider.setOrientation(Qt.Horizontal)
+        self.horizontalSlider.setOrientation(Qt.Orientation.Horizontal)
 
         self.gridLayout_2.addWidget(self.horizontalSlider, 2, 0, 1, 2)
 
@@ -1843,8 +1951,8 @@ class Ui_MainWindow(object):
         self.row_3 = QFrame(self.widgets)
         self.row_3.setObjectName(u"row_3")
         self.row_3.setMinimumSize(QSize(0, 150))
-        self.row_3.setFrameShape(QFrame.StyledPanel)
-        self.row_3.setFrameShadow(QFrame.Raised)
+        self.row_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.row_3.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_12 = QHBoxLayout(self.row_3)
         self.horizontalLayout_12.setSpacing(0)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
@@ -1905,58 +2013,58 @@ class Ui_MainWindow(object):
         __qtablewidgetitem23 = QTableWidgetItem()
         self.tableWidget.setItem(0, 3, __qtablewidgetitem23)
         self.tableWidget.setObjectName(u"tableWidget")
-        sizePolicy6 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        sizePolicy6.setHorizontalStretch(0)
-        sizePolicy6.setVerticalStretch(0)
-        sizePolicy6.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
-        self.tableWidget.setSizePolicy(sizePolicy6)
+        sizePolicy7 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy7.setHorizontalStretch(0)
+        sizePolicy7.setVerticalStretch(0)
+        sizePolicy7.setHeightForWidth(self.tableWidget.sizePolicy().hasHeightForWidth())
+        self.tableWidget.setSizePolicy(sizePolicy7)
         palette = QPalette()
         brush = QBrush(QColor(221, 221, 221, 255))
-        brush.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        brush.setStyle(Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.WindowText, brush)
         brush1 = QBrush(QColor(0, 0, 0, 0))
-        brush1.setStyle(Qt.SolidPattern)
-        palette.setBrush(QPalette.Active, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Active, QPalette.Text, brush)
-        palette.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        brush1.setStyle(Qt.BrushStyle.SolidPattern)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.Button, brush1)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.Text, brush)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.ButtonText, brush)
         brush2 = QBrush(QColor(0, 0, 0, 255))
-        brush2.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Active, QPalette.Base, brush2)
-        palette.setBrush(QPalette.Active, QPalette.Window, brush1)
+        brush2.setStyle(Qt.BrushStyle.NoBrush)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.Base, brush2)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.Window, brush1)
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
+        palette.setBrush(QPalette.ColorGroup.Active, QPalette.ColorRole.PlaceholderText, brush)
 #endif
-        palette.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Inactive, QPalette.Text, brush)
-        palette.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.WindowText, brush)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.Button, brush1)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.Text, brush)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.ButtonText, brush)
         brush3 = QBrush(QColor(0, 0, 0, 255))
-        brush3.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Inactive, QPalette.Base, brush3)
-        palette.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+        brush3.setStyle(Qt.BrushStyle.NoBrush)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.Base, brush3)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.Window, brush1)
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
+        palette.setBrush(QPalette.ColorGroup.Inactive, QPalette.ColorRole.PlaceholderText, brush)
 #endif
-        palette.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
-        palette.setBrush(QPalette.Disabled, QPalette.Button, brush1)
-        palette.setBrush(QPalette.Disabled, QPalette.Text, brush)
-        palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.WindowText, brush)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.Button, brush1)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.Text, brush)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.ButtonText, brush)
         brush4 = QBrush(QColor(0, 0, 0, 255))
-        brush4.setStyle(Qt.NoBrush)
-        palette.setBrush(QPalette.Disabled, QPalette.Base, brush4)
-        palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+        brush4.setStyle(Qt.BrushStyle.NoBrush)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.Base, brush4)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.Window, brush1)
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
+        palette.setBrush(QPalette.ColorGroup.Disabled, QPalette.ColorRole.PlaceholderText, brush)
 #endif
         self.tableWidget.setPalette(palette)
-        self.tableWidget.setFrameShape(QFrame.NoFrame)
-        self.tableWidget.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        self.tableWidget.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
-        self.tableWidget.setSelectionMode(QAbstractItemView.SingleSelection)
-        self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.tableWidget.setFrameShape(QFrame.Shape.NoFrame)
+        self.tableWidget.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
+        self.tableWidget.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
+        self.tableWidget.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self.tableWidget.setSelectionMode(QAbstractItemView.SelectionMode.SingleSelection)
+        self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self.tableWidget.setShowGrid(True)
-        self.tableWidget.setGridStyle(Qt.SolidLine)
+        self.tableWidget.setGridStyle(Qt.PenStyle.SolidLine)
         self.tableWidget.setSortingEnabled(False)
         self.tableWidget.horizontalHeader().setVisible(False)
         self.tableWidget.horizontalHeader().setCascadingSectionResizes(True)
@@ -1983,8 +2091,8 @@ class Ui_MainWindow(object):
         self.extraRightBox.setObjectName(u"extraRightBox")
         self.extraRightBox.setMinimumSize(QSize(0, 0))
         self.extraRightBox.setMaximumSize(QSize(0, 16777215))
-        self.extraRightBox.setFrameShape(QFrame.NoFrame)
-        self.extraRightBox.setFrameShadow(QFrame.Raised)
+        self.extraRightBox.setFrameShape(QFrame.Shape.NoFrame)
+        self.extraRightBox.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_7 = QVBoxLayout(self.extraRightBox)
         self.verticalLayout_7.setSpacing(0)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
@@ -1992,23 +2100,23 @@ class Ui_MainWindow(object):
         self.themeSettingsTopDetail = QFrame(self.extraRightBox)
         self.themeSettingsTopDetail.setObjectName(u"themeSettingsTopDetail")
         self.themeSettingsTopDetail.setMaximumSize(QSize(16777215, 3))
-        self.themeSettingsTopDetail.setFrameShape(QFrame.NoFrame)
-        self.themeSettingsTopDetail.setFrameShadow(QFrame.Raised)
+        self.themeSettingsTopDetail.setFrameShape(QFrame.Shape.NoFrame)
+        self.themeSettingsTopDetail.setFrameShadow(QFrame.Shadow.Raised)
 
         self.verticalLayout_7.addWidget(self.themeSettingsTopDetail)
 
         self.contentSettings = QFrame(self.extraRightBox)
         self.contentSettings.setObjectName(u"contentSettings")
-        self.contentSettings.setFrameShape(QFrame.NoFrame)
-        self.contentSettings.setFrameShadow(QFrame.Raised)
+        self.contentSettings.setFrameShape(QFrame.Shape.NoFrame)
+        self.contentSettings.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_13 = QVBoxLayout(self.contentSettings)
         self.verticalLayout_13.setSpacing(0)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
         self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
         self.topMenus = QFrame(self.contentSettings)
         self.topMenus.setObjectName(u"topMenus")
-        self.topMenus.setFrameShape(QFrame.NoFrame)
-        self.topMenus.setFrameShadow(QFrame.Raised)
+        self.topMenus.setFrameShape(QFrame.Shape.NoFrame)
+        self.topMenus.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_14 = QVBoxLayout(self.topMenus)
         self.verticalLayout_14.setSpacing(0)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
@@ -2019,8 +2127,8 @@ class Ui_MainWindow(object):
         self.btn_message.setSizePolicy(sizePolicy)
         self.btn_message.setMinimumSize(QSize(0, 45))
         self.btn_message.setFont(font)
-        self.btn_message.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_message.setLayoutDirection(Qt.LeftToRight)
+        self.btn_message.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_message.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_message.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-envelope-open.png);")
 
         self.verticalLayout_14.addWidget(self.btn_message)
@@ -2031,8 +2139,8 @@ class Ui_MainWindow(object):
         self.btn_print.setSizePolicy(sizePolicy)
         self.btn_print.setMinimumSize(QSize(0, 45))
         self.btn_print.setFont(font)
-        self.btn_print.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_print.setLayoutDirection(Qt.LeftToRight)
+        self.btn_print.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_print.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_print.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-print.png);")
 
         self.verticalLayout_14.addWidget(self.btn_print)
@@ -2043,14 +2151,14 @@ class Ui_MainWindow(object):
         self.btn_logout.setSizePolicy(sizePolicy)
         self.btn_logout.setMinimumSize(QSize(0, 45))
         self.btn_logout.setFont(font)
-        self.btn_logout.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_logout.setLayoutDirection(Qt.LeftToRight)
+        self.btn_logout.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        self.btn_logout.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
         self.btn_logout.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-account-logout.png);")
 
         self.verticalLayout_14.addWidget(self.btn_logout)
 
 
-        self.verticalLayout_13.addWidget(self.topMenus, 0, Qt.AlignTop)
+        self.verticalLayout_13.addWidget(self.topMenus, 0, Qt.AlignmentFlag.AlignTop)
 
 
         self.verticalLayout_7.addWidget(self.contentSettings)
@@ -2065,8 +2173,8 @@ class Ui_MainWindow(object):
         self.bottomBar.setObjectName(u"bottomBar")
         self.bottomBar.setMinimumSize(QSize(0, 22))
         self.bottomBar.setMaximumSize(QSize(16777215, 22))
-        self.bottomBar.setFrameShape(QFrame.NoFrame)
-        self.bottomBar.setFrameShadow(QFrame.Raised)
+        self.bottomBar.setFrameShape(QFrame.Shape.NoFrame)
+        self.bottomBar.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_5 = QHBoxLayout(self.bottomBar)
         self.horizontalLayout_5.setSpacing(0)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
@@ -2078,13 +2186,13 @@ class Ui_MainWindow(object):
         font5.setBold(False)
         font5.setItalic(False)
         self.creditsLabel.setFont(font5)
-        self.creditsLabel.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.creditsLabel.setAlignment(Qt.AlignmentFlag.AlignLeading|Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignVCenter)
 
         self.horizontalLayout_5.addWidget(self.creditsLabel)
 
         self.version = QLabel(self.bottomBar)
         self.version.setObjectName(u"version")
-        self.version.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.version.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
 
         self.horizontalLayout_5.addWidget(self.version)
 
@@ -2092,8 +2200,8 @@ class Ui_MainWindow(object):
         self.frame_size_grip.setObjectName(u"frame_size_grip")
         self.frame_size_grip.setMinimumSize(QSize(20, 0))
         self.frame_size_grip.setMaximumSize(QSize(20, 16777215))
-        self.frame_size_grip.setFrameShape(QFrame.NoFrame)
-        self.frame_size_grip.setFrameShadow(QFrame.Raised)
+        self.frame_size_grip.setFrameShape(QFrame.Shape.NoFrame)
+        self.frame_size_grip.setFrameShadow(QFrame.Shadow.Raised)
 
         self.horizontalLayout_5.addWidget(self.frame_size_grip)
 
@@ -2153,51 +2261,56 @@ class Ui_MainWindow(object):
         self.label_PassiveTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
         self.label_PassiveRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
         self.label_Passive.setText(QCoreApplication.translate("MainWindow", u"Passive", None))
-        self.label_IsometricRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
-        self.label_IsometricHoldTime.setText(QCoreApplication.translate("MainWindow", u"Hold TIme: (s)", None))
+        self.passiveRun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
+        self.label_IsometricTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
         self.groupBox_IsometricPos.setTitle(QCoreApplication.translate("MainWindow", u"Positions (deg)", None))
         self.label_IsometricPos1.setText(QCoreApplication.translate("MainWindow", u"Position 1:", None))
         self.label_IsometricPos2.setText(QCoreApplication.translate("MainWindow", u"Position 2:", None))
         self.label_IsometricPos3.setText(QCoreApplication.translate("MainWindow", u"Position 3:", None))
-        self.label_IsometricRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
         self.label_IsometricSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
+        self.label_IsometricRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
+        self.IsometricRun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
+        self.label_IsometricRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
         self.label_IsometricForce.setText(QCoreApplication.translate("MainWindow", u"Force: (N)", None))
-        self.label_IsometricTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
+        self.label_IsometricHoldTime.setText(QCoreApplication.translate("MainWindow", u"Hold TIme: (s)", None))
         self.label_Isometric.setText(QCoreApplication.translate("MainWindow", u"Isometric", None))
         self.label_IsotonicFlexionForce.setText(QCoreApplication.translate("MainWindow", u"Flexion Force: (N)", None))
-        self.label_IsotonicRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
-        self.label_IsotonicRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
-        self.label_IsotonicExtensionForce.setText(QCoreApplication.translate("MainWindow", u"Extension Force: (N)", None))
-        self.label_IsotonicMinROM.setText(QCoreApplication.translate("MainWindow", u"Min ROM:", None))
-        self.label_IsotonicSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
         self.label_IsotonicTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
         self.label_IsotonicMaxROM.setText(QCoreApplication.translate("MainWindow", u"Max ROM:", None))
+        self.label_IsotonicRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
         self.label_Isotonic.setText(QCoreApplication.translate("MainWindow", u"Isotonic", None))
+        self.label_IsotonicSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
+        self.label_IsotonicMinROM.setText(QCoreApplication.translate("MainWindow", u"Min ROM:", None))
+        self.label_IsotonicRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
+        self.label_IsotonicExtensionForce.setText(QCoreApplication.translate("MainWindow", u"Extension Force: (N)", None))
+        self.isotonicRun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
+        self.label_IsokineticExtensionForce.setText(QCoreApplication.translate("MainWindow", u"Extension Force: (N)", None))
+        self.label_IsokineticTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
+        self.label_IsokineticRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
+        self.label_IsokineticMaxROM.setText(QCoreApplication.translate("MainWindow", u"Max ROM:", None))
+        self.label_IsokineticExtensionSpeed.setText(QCoreApplication.translate("MainWindow", u"Extension Speed: (deg/s)", None))
+        self.label_IsokineticMinROM.setText(QCoreApplication.translate("MainWindow", u"Min ROM:", None))
+        self.label_IsokineticRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
+        self.label_IsokineticSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
+        self.label_IsokineticFlexionForce.setText(QCoreApplication.translate("MainWindow", u"Flexion Force: (N)", None))
+        self.label_Isokinetic.setText(QCoreApplication.translate("MainWindow", u"Isokinetic", None))
+        self.label_IsokineticFlexionSpeed.setText(QCoreApplication.translate("MainWindow", u"Flexion Speed: (deg/s)", None))
         self.comboBox_IsokineticEccCon.setItemText(0, QCoreApplication.translate("MainWindow", u"ECC/CON", None))
         self.comboBox_IsokineticEccCon.setItemText(1, QCoreApplication.translate("MainWindow", u"ECC/ECC", None))
         self.comboBox_IsokineticEccCon.setItemText(2, QCoreApplication.translate("MainWindow", u"CON/CON", None))
         self.comboBox_IsokineticEccCon.setItemText(3, QCoreApplication.translate("MainWindow", u"CON/ECC", None))
 
-        self.label_IsokineticSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
-        self.label_IsokineticMaxROM.setText(QCoreApplication.translate("MainWindow", u"Max ROM:", None))
-        self.label_IsokineticFlexionSpeed.setText(QCoreApplication.translate("MainWindow", u"Flexion Speed: (deg/s)", None))
-        self.label_IsokineticTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
-        self.label_IsokineticRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
-        self.label_IsokineticExtensionForce.setText(QCoreApplication.translate("MainWindow", u"Extension Force: (N)", None))
-        self.label_IsokineticFlexionForce.setText(QCoreApplication.translate("MainWindow", u"Flexion Force: (N)", None))
-        self.label_IsokineticRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
-        self.label_IsokineticMinROM.setText(QCoreApplication.translate("MainWindow", u"Min ROM:", None))
-        self.label_IsokineticExtensionSpeed.setText(QCoreApplication.translate("MainWindow", u"Extension Speed: (deg/s)", None))
-        self.label_Isokinetic.setText(QCoreApplication.translate("MainWindow", u"Isokinetic", None))
-        self.label_Spring.setText(QCoreApplication.translate("MainWindow", u"Spring Form", None))
-        self.label_SpringTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
+        self.isokineticRun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
         self.label_SpringRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
         self.label_SpringSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
-        self.label_SpringRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
-        self.label_SpringMinROM.setText(QCoreApplication.translate("MainWindow", u"Min ROM:", None))
-        self.label_SpringMaxROM.setText(QCoreApplication.translate("MainWindow", u"Max ROM:", None))
         self.label_SpringInitialPos.setText(QCoreApplication.translate("MainWindow", u"Initial Position: (deg)", None))
+        self.label_SpringRepeat.setText(QCoreApplication.translate("MainWindow", u"Repeat:", None))
+        self.label_SpringTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
         self.label_SpringStiffness.setText(QCoreApplication.translate("MainWindow", u"Stiffness:", None))
+        self.label_SpringMaxROM.setText(QCoreApplication.translate("MainWindow", u"Max ROM:", None))
+        self.label_SpringMinROM.setText(QCoreApplication.translate("MainWindow", u"Min ROM:", None))
+        self.label_Spring.setText(QCoreApplication.translate("MainWindow", u"Spring Form", None))
+        self.springRun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
         self.label_WaterTime.setText(QCoreApplication.translate("MainWindow", u"Time: (s)", None))
         self.label_WaterRestTime.setText(QCoreApplication.translate("MainWindow", u"Rest Time: (s)", None))
         self.label_WaterSet.setText(QCoreApplication.translate("MainWindow", u"Set:", None))
@@ -2206,6 +2319,7 @@ class Ui_MainWindow(object):
         self.label_WaterMaxROM.setText(QCoreApplication.translate("MainWindow", u"Max ROM:", None))
         self.label_WaterDensity.setText(QCoreApplication.translate("MainWindow", u"Density:", None))
         self.label_Water.setText(QCoreApplication.translate("MainWindow", u"Water Form", None))
+        self.waterRun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
